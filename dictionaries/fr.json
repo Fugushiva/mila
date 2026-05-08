@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "siteName": "MILA International Legal Advice",
+    "tagline": "Conseil juridique francophone en Thaïlande",
+    "description": "Cabinet d'avocats francophone et italophone à Bangkok et Hua Hin. Droit des affaires, immobilier, immigration, fiscalité et plus."
+  },
+  "common": {
+    "skipToContent": "Aller au contenu principal",
+    "loading": "Chargement…",
+    "ctaBookMeeting": "Prendre rendez-vous",
+    "ctaCallUs": "Nous appeler",
+    "ctaContactUs": "Nous contacter",
+    "ctaLearnMore": "En savoir plus",
+    "ctaDiscoverExpertise": "Nos expertises",
+    "ctaDiscoverTeam": "Découvrir l'équipe",
+    "and": "et"
+  },
+  "nav": {
+    "home": "Accueil",
+    "cabinet": "Le cabinet",
+    "team": "Équipe",
+    "expertises": "Expertises",
+    "contact": "Contact",
+    "bookMeeting": "Prendre RDV"
+  },
+  "footer": {
+    "tagline": "Conseil juridique francophone à Bangkok et Hua Hin depuis 2012.",
+    "navTitle": "Plan du site",
+    "contactTitle": "Contact",
+    "legalTitle": "Mentions légales",
+    "legalNotice": "Mentions légales",
+    "privacy": "Confidentialité",
+    "cookies": "Cookies",
+    "address": "3rd Floor, Modern Town Building, Soi Sukhumvit 63 (Ekkamai), Klongton Nua Wattana, Bangkok 10110",
+    "phone": "+66 (0)97 180 5845",
+    "email": "info@mila-law.com",
+    "hours": "Lun-Ven : 9h-18h (heure de Bangkok)",
+    "copyright": "© {year} MILA International Legal Advice. Tous droits réservés.",
+    "languageSwitch": "Changer de langue"
+  },
+  "home": {
+    "title": "Accueil",
+    "hero": {
+      "h1": "Conseil juridique francophone en Thaïlande",
+      "subtitle": "Cabinet d'avocats trilingue à Bangkok et Hua Hin. Droit des affaires, immobilier, immigration et fiscalité internationale."
+    },
+    "trustBar": {
+      "label": "Référencé dans"
+    },
+    "valueProp": {
+      "title": "Une expertise unique en Thaïlande",
+      "items": {
+        "francophone": {
+          "title": "Avocats francophones",
+          "description": "Conseil dans votre langue, avec la précision juridique française."
+        },
+        "academic": {
+          "title": "Référence académique",
+          "description": "Publications chez Springer, Brill et Cengage. Liens avec Mahidol University."
+        },
+        "trilingual": {
+          "title": "Trilingue FR / EN / IT",
+          "description": "Trois langues de travail pour servir une clientèle internationale."
+        },
+        "local": {
+          "title": "Bangkok + Hua Hin",
+          "description": "Présence locale, interventions à Phuket, Pattaya, Chiang Mai."
+        }
+      }
+    }
+  },
+  "cabinet": {
+    "title": "Le cabinet"
+  },
+  "team": {
+    "title": "Notre équipe"
+  },
+  "expertises": {
+    "title": "Nos expertises"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "legal": {
+    "title": "Mentions légales et confidentialité"
+  }
+}
