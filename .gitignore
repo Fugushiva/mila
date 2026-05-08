@@ -43,6 +43,12 @@ next-env.d.ts
 # tooling caches
 .playwright-mcp/
 analysis-mila-law/
+.token-savior-cache.json
+
+# debug scripts & artifacts
+cdp-eval*.ps1
+dbg-out*/
+edge-profile-*/
 
 # dev server logs
 dev-stdout.log
