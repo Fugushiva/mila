@@ -8,6 +8,11 @@ import { PageHero } from "@/components/sections/PageHero";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { LOCALES } from "@/lib/locales";
+import { JsonLd } from "@/lib/seo/JsonLdScript";
+import { breadcrumbListJsonLd } from "@/lib/seo/jsonld";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mila-law.com";
 
 export async function generateMetadata(
   props: PageProps<"/[lang]/contact">,
@@ -18,6 +23,16 @@ export async function generateMetadata(
   return {
     title: dict.contact.title,
     description: dict.contact.metaDescription,
+    alternates: {
+      canonical: `/${lang}/contact`,
+      languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}/contact`])),
+    },
+    openGraph: {
+      title: dict.contact.title,
+      description: dict.contact.metaDescription,
+      url: `${SITE_URL}/${lang}/contact`,
+      type: "website",
+    },
   };
 }
 
@@ -28,6 +43,12 @@ export default async function ContactPage(props: PageProps<"/[lang]/contact">) {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbListJsonLd(lang, [
+          { name: dict.nav.home, path: "/" },
+          { name: dict.nav.contact, path: "/contact" },
+        ])}
+      />
       <PageHero
         eyebrow={dict.contact.hero.eyebrow}
         title={dict.contact.hero.h1}

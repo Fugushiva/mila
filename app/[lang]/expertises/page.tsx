@@ -6,6 +6,11 @@ import { PillarSection } from "@/components/sections/PillarSection";
 import { PillarsNav } from "@/components/sections/PillarsNav";
 import { PILLARS } from "@/lib/data/pillars";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { LOCALES } from "@/lib/locales";
+import { JsonLd } from "@/lib/seo/JsonLdScript";
+import { breadcrumbListJsonLd } from "@/lib/seo/jsonld";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mila-law.com";
 
 export async function generateMetadata(
   props: PageProps<"/[lang]/expertises">,
@@ -16,6 +21,18 @@ export async function generateMetadata(
   return {
     title: dict.expertises.title,
     description: dict.expertises.metaDescription,
+    alternates: {
+      canonical: `/${lang}/expertises`,
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, `/${l}/expertises`]),
+      ),
+    },
+    openGraph: {
+      title: dict.expertises.title,
+      description: dict.expertises.metaDescription,
+      url: `${SITE_URL}/${lang}/expertises`,
+      type: "website",
+    },
   };
 }
 
@@ -37,6 +54,12 @@ export default async function ExpertisesPage(
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbListJsonLd(lang, [
+          { name: dict.nav.home, path: "/" },
+          { name: dict.nav.expertises, path: "/expertises" },
+        ])}
+      />
       <PageHero
         eyebrow={dict.expertises.hero.eyebrow}
         title={dict.expertises.hero.h1}
