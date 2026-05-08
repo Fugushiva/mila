@@ -346,7 +346,71 @@
     }
   },
   "expertises": {
-    "title": "Our practice areas"
+    "title": "Our practice areas",
+    "metaDescription": "Four pillars of expertise — People & Family, Business, Real Estate, Innovation — covering twelve practice areas of Thai and international law.",
+    "hero": {
+      "eyebrow": "Our practice areas",
+      "h1": "Our practice areas",
+      "subtitle": "Cross-cutting expertise in Thai and international law, organised across four pillars and twelve practice areas."
+    },
+    "navLabel": "Navigate between pillars",
+    "learnMore": "Learn more",
+    "pillars": {
+      "people": {
+        "title": "People & Family",
+        "intro": "Counsel for individuals, families and expatriates on relocation, daily-life rights and intergenerational wealth transfer."
+      },
+      "business": {
+        "title": "Business",
+        "intro": "Advisory for executives and investors on incorporation, governance, taxation and the growth of their operations in Thailand and abroad."
+      },
+      "realestate": {
+        "title": "Real Estate",
+        "intro": "Securing real-estate transactions, from land to residential property, and resolving the disputes that arise around them."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "intro": "Protecting intangible assets and ensuring regulatory compliance for tech companies, intellectual-property holders and data controllers."
+      }
+    },
+    "items": {
+      "business": {
+        "longDescription": "Company incorporation, structure selection (Co. Ltd, BOI, branch office), corporate governance, commercial contracts and joint-venture agreements."
+      },
+      "realEstate": {
+        "longDescription": "Acquisitions and disposals, long-term leases, condominiums, investment structures and notarial coordination."
+      },
+      "immigration": {
+        "longDescription": "Long-stay visas, work permits, LTR programme, permanent residency and family-reunification procedures."
+      },
+      "tax": {
+        "longDescription": "Tax residency, international tax treaties, cross-border optimisation and reporting obligations in Thailand and abroad."
+      },
+      "family": {
+        "longDescription": "Marriage and partnership, contested or amicable divorce, parental authority, international succession and wealth planning."
+      },
+      "labor": {
+        "longDescription": "Employment contracts, labour compliance, terminations, international mobility and management of HR disputes."
+      },
+      "ip": {
+        "longDescription": "Filing and defence of trademarks, patents, designs and models, licence agreements and anti-counterfeiting actions."
+      },
+      "litigation": {
+        "longDescription": "Representation before Thai courts and arbitral tribunals, enforcement of foreign judgments and pre-litigation strategy."
+      },
+      "criminal": {
+        "longDescription": "White-collar criminal defence, compliance programmes, fraud prevention and internal investigations."
+      },
+      "compliance": {
+        "longDescription": "PDPA / GDPR compliance, regulatory audits, data governance and information-protection policies."
+      },
+      "ma": {
+        "longDescription": "Legal due diligence, deal structuring, transaction documentation and post-closing integration."
+      },
+      "wealth": {
+        "longDescription": "Trusts, international holdings, life-insurance policies, succession agreements and transfer structures between Thailand and Europe."
+      }
+    }
   },
   "contact": {
     "title": "Contact"
