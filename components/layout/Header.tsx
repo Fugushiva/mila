@@ -44,7 +44,7 @@ export function Header({ locale }: HeaderProps) {
           className="pointer-events-none absolute -right-20 top-1/2 h-32 w-72 -translate-y-1/2 bg-secondary/10 blur-2xl"
         />
         <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-4">
-          <p className="hidden font-sans text-[11px] tracking-[0.18em] uppercase text-white/55 md:block">
+          <p className="hidden font-sans text-[11px] tracking-[0.18em] uppercase text-white/80 md:block">
             Bangkok&nbsp;&nbsp;·&nbsp;&nbsp;Hua Hin&nbsp;&nbsp;·&nbsp;&nbsp;Lun–Ven 9h–18h
           </p>
           <div className="hidden h-px flex-1 bg-gradient-to-r from-transparent via-secondary/40 to-transparent md:block" />
@@ -72,7 +72,7 @@ export function Header({ locale }: HeaderProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative rounded-md px-3 py-2 font-sans text-sm font-bold text-primary cursor-pointer transition-colors duration-200 hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-secondary after:content-[''] after:transition-all after:duration-300 hover:after:w-full"
+                  className="relative rounded-md px-3 py-2 font-sans text-sm font-bold text-primary cursor-pointer no-underline transition-colors duration-200 hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-secondary after:content-[''] after:transition-all after:duration-300 hover:after:w-full"
               >
                 {item.label}
               </Link>

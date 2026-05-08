@@ -142,8 +142,12 @@ body {
   overflow-x: hidden;
 }
 
-/* Heading defaults — applied via utility class .font-display in components,
-   but we keep semantic baseline here so raw h* always look right */
+/* Heading typography defaults — font/weight/spacing ONLY.
+   Color is intentionally absent: Tailwind v4 outputs user CSS unlayered
+   (after @layer utilities closes), so any `color` set here would cascade
+   over utility classes like `text-text-inverse`. Every component that
+   renders headings applies an explicit color utility (text-primary,
+   text-text-inverse, etc.) — that is the single source of truth. */
 h1,
 h2,
 h3 {
@@ -151,7 +155,6 @@ h3 {
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: var(--color-primary);
 }
 
 h4,
@@ -160,7 +163,6 @@ h6 {
   font-family: var(--font-sans);
   font-weight: 700;
   line-height: 1.25;
-  color: var(--color-primary);
 }
 
 p {
@@ -265,4 +267,3 @@ h4 {
     color-mix(in srgb, var(--color-bg) 0%, transparent) 100%
   );
 }
-
