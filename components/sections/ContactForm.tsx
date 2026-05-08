@@ -101,19 +101,32 @@ export function ContactForm({ locale, dict }: ContactFormProps) {
       subject: trimmedSubject,
       message: trimmedMessage,
       consent: values.consent,
+      locale,
     };
 
     try {
-      await new Promise<void>((resolve) => {
-        window.setTimeout(resolve, 800);
+      // TODO(provider-email): plug a real provider (Resend/Postmark) in `app/api/contact/route.ts`.
+      // The endpoint must validate the payload server-side (Zod) and send the transactional email.
+      // Until the endpoint is wired, this fetch fails fast and surfaces the error to the user.
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
 
-      console.log("ContactForm submission:", payload);
+      if (!response.ok) {
+        throw new Error(`Submission failed: ${response.status}`);
+      }
+
       toast.success(dict.successTitle, {
         description: dict.successDescription,
       });
       setValues(initialValues);
       setErrors({});
+    } catch {
+      toast.error(dict.errorTitle, {
+        description: dict.errorDescription,
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -148,6 +161,8 @@ export function ContactForm({ locale, dict }: ContactFormProps) {
             onChange={(event) => updateField("name", event.target.value)}
             placeholder={dict.fields.name.placeholder}
             autoComplete="name"
+            required
+            aria-required="true"
             error={!!errors.name}
             aria-invalid={!!errors.name}
             aria-describedby={errors.name ? "name-error" : undefined}
@@ -175,6 +190,8 @@ export function ContactForm({ locale, dict }: ContactFormProps) {
             onChange={(event) => updateField("email", event.target.value)}
             placeholder={dict.fields.email.placeholder}
             autoComplete="email"
+            required
+            aria-required="true"
             error={!!errors.email}
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? "email-error" : undefined}
@@ -212,6 +229,8 @@ export function ContactForm({ locale, dict }: ContactFormProps) {
             name="subject"
             value={values.subject}
             onChange={(event) => updateField("subject", event.target.value)}
+            required
+            aria-required="true"
             error={!!errors.subject}
             aria-invalid={!!errors.subject}
             aria-describedby={errors.subject ? "subject-error" : undefined}
@@ -244,6 +263,8 @@ export function ContactForm({ locale, dict }: ContactFormProps) {
             value={values.message}
             onChange={(event) => updateField("message", event.target.value)}
             placeholder={dict.fields.message.placeholder}
+            required
+            aria-required="true"
             error={!!errors.message}
             aria-invalid={!!errors.message}
             aria-describedby={errors.message ? "message-error" : undefined}
@@ -266,6 +287,8 @@ export function ContactForm({ locale, dict }: ContactFormProps) {
               name="consent"
               checked={values.consent}
               onChange={(event) => updateField("consent", event.target.checked)}
+              required
+              aria-required="true"
               aria-invalid={!!errors.consent}
               aria-describedby={errors.consent ? "consent-error" : undefined}
             />

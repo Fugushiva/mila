@@ -12,11 +12,12 @@ type Props = {
   isbnLabel?: string;
 };
 
+// Accent gradients reference design tokens — emerald uses the `accent` family
+// added to globals.css (`--color-accent`, `--color-accent-soft`).
 const accentClasses: Record<"navy" | "gold" | "emerald", string> = {
   navy: "bg-gradient-to-br from-primary via-primary-soft to-primary text-secondary",
   gold: "bg-gradient-to-br from-secondary via-secondary-soft to-secondary text-primary",
-  emerald:
-    "bg-gradient-to-br from-[#0F5132] via-[#127046] to-[#0F5132] text-secondary",
+  emerald: "bg-gradient-to-br from-accent via-accent-soft to-accent text-secondary",
 };
 
 export function BookCard({

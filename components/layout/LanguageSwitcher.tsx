@@ -46,7 +46,7 @@ export function LanguageSwitcher({
             href={href}
             aria-current={isActive ? "page" : undefined}
             className={cn(
-              "inline-flex min-h-[36px] min-w-[36px] items-center justify-center rounded-sm px-2.5 uppercase",
+              "inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-sm px-3 text-sm uppercase",
               "cursor-pointer transition-colors duration-200",
               "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-bg",
               isActive

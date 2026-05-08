@@ -23,7 +23,11 @@
     "contact": "Contact",
     "bookMeeting": "Prendre RDV",
     "openMenu": "Ouvrir le menu",
-    "closeMenu": "Fermer le menu"
+    "closeMenu": "Fermer le menu",
+    "primaryNavLabel": "Navigation principale",
+    "mobileNavLabel": "Navigation mobile",
+    "mobileDialogTitle": "Menu de navigation",
+    "logoLabel": "MILA — Accueil"
   },
   "footer": {
     "tagline": "Conseil juridique francophone à Bangkok et Hua Hin depuis 2012.",
@@ -42,13 +46,23 @@
   },
   "home": {
     "title": "Accueil",
+    "metaTitle": "Avocats francophones et italophones à Bangkok & Hua Hin",
     "hero": {
+      "eyebrow": "Bangkok · Hua Hin — Depuis 2012",
       "h1": "Conseil juridique francophone en Thaïlande",
+      "h1Emphasis": "Thaïlande",
       "subtitle": "Cabinet d'avocats trilingue à Bangkok et Hua Hin. Droit des affaires, immobilier, immigration et fiscalité internationale.",
-      "imageAlt": "Vue panoramique des gratte-ciel de Bangkok au crépuscule"
+      "imageAlt": "Vue panoramique des gratte-ciel de Bangkok au crépuscule",
+      "scrollHint": "Découvrir",
+      "stats": {
+        "years": { "value": 12, "suffix": "+", "label": "Années d'exercice" },
+        "languages": { "value": 3, "suffix": "", "label": "Langues de travail" },
+        "cities": { "value": 2, "suffix": "", "label": "Bureaux en Thaïlande" },
+        "publications": { "value": 4, "suffix": "+", "label": "Ouvrages publiés" }
+      }
     },
     "trustBar": {
-      "label": "Référencé dans",
+      "label": "Publié chez · Enseigné à",
       "logos": {
         "springer": "Springer",
         "brill": "Brill",
@@ -173,6 +187,7 @@
   },
   "cabinet": {
     "title": "Le cabinet",
+    "metaTitle": "Le cabinet — avocats francophones en Thaïlande depuis 2012",
     "metaDescription": "Histoire, valeurs et couverture géographique de MILA International Legal Advice — cabinet francophone de référence à Bangkok et Hua Hin depuis 2012.",
     "hero": {
       "eyebrow": "À propos",
@@ -184,7 +199,7 @@
       "title": "Une expertise construite au fil des années",
       "paragraphs": {
         "p1": "Fondé en 2012 à Bangkok, MILA International Legal Advice est né de la conviction qu'un cabinet d'avocats francophone et international pouvait apporter une valeur unique aux entrepreneurs, investisseurs et familles présents en Thaïlande.",
-        "p2": "Au fil des années, notre équipe a accompagné des centaines de clients dans leurs projets les plus complexes — implantation de sociétés, acquisitions immobilières, contentieux internationaux, structuration patrimoniale — en alliant la rigueur du droit civil européen et la connaissance pointue du droit thaïlandais.",
+        "p2": "Au fil des années, notre équipe a accompagné une clientèle francophone, italophone et internationale sur des dossiers exigeants — implantation de sociétés, acquisitions immobilières, contentieux transfrontaliers, structuration patrimoniale — en alliant la rigueur du droit civil européen et une connaissance pointue du droit thaïlandais.",
         "p3": "Aujourd'hui, MILA est reconnu comme une référence académique et pratique sur le droit thaïlandais, avec des publications chez Springer, Brill et Cengage, et des liens privilégiés avec Mahidol University."
       },
       "imageAlt": "Vue intérieure d'un bureau d'avocats à Bangkok"
@@ -263,6 +278,7 @@
   },
   "team": {
     "title": "Notre équipe",
+    "metaTitle": "L'équipe — avocats trilingues FR / EN / IT à Bangkok",
     "metaDescription": "L'équipe de MILA International Legal Advice — avocats, juristes et fiscalistes francophones, anglophones et italophones à Bangkok et Hua Hin.",
     "hero": {
       "eyebrow": "Notre équipe",
@@ -289,33 +305,33 @@
       },
       "wichai": {
         "name": "Wichai Jakkrod",
-        "role": "Project Manager",
+        "role": "Chef de projet",
         "shortBio": "Pilotage des dossiers transverses et coordination clients.",
-        "bio": "Project Manager au sein du cabinet, Wichai Jakkrod assure le pilotage opérationnel des dossiers complexes et la coordination avec les autorités locales. Sa double formation juridique et de gestion lui permet d'orchestrer efficacement les opérations transverses entre les bureaux de Bangkok et Hua Hin."
+        "bio": "Chef de projet au sein du cabinet, Wichai Jakkrod assure le pilotage opérationnel des dossiers complexes et la coordination avec les autorités locales. Sa double formation juridique et de gestion lui permet d'orchestrer efficacement les opérations transverses entre les bureaux de Bangkok et Hua Hin."
       },
       "atitaya": {
         "name": "Atitaya Srisawet",
-        "role": "Project Manager",
+        "role": "Cheffe de projet",
         "shortBio": "Suivi des dossiers immobiliers et corporate.",
-        "bio": "Project Manager spécialisée dans le suivi des dossiers immobiliers et corporate, Atitaya Srisawet coordonne les due diligences, la rédaction des actes et les échanges avec les notaires et services administratifs thaïlandais. Reconnue pour sa rigueur et sa réactivité."
+        "bio": "Cheffe de projet spécialisée dans le suivi des dossiers immobiliers et corporate, Atitaya Srisawet coordonne les due diligences, la rédaction des actes et les échanges avec les notaires et services administratifs thaïlandais. Reconnue pour sa rigueur et sa réactivité."
       },
       "amrita": {
         "name": "Amrita Luthra",
-        "role": "Legal Assistant",
+        "role": "Assistante juridique",
         "shortBio": "Recherche juridique et rédaction de mémoires.",
-        "bio": "Legal Assistant chez MILA, Amrita Luthra appuie l'équipe sur la recherche juridique, la rédaction de notes et de mémoires en anglais et la veille réglementaire. Diplômée en droit international, elle apporte une expertise particulière sur les questions de droit comparé."
+        "bio": "Assistante juridique chez MILA, Amrita Luthra appuie l'équipe sur la recherche juridique, la rédaction de notes et de mémoires en anglais et la veille réglementaire. Diplômée en droit international, elle apporte une expertise particulière sur les questions de droit comparé."
       },
       "pasakorn": {
         "name": "Pasakorn Nuntutchote",
-        "role": "Project Officer",
+        "role": "Coordinateur de projets",
         "shortBio": "Coordination des dossiers d'immigration et corporate.",
-        "bio": "Project Officer du cabinet, Pasakorn Nuntutchote prend en charge la coordination administrative des dossiers d'immigration, de constitution de société et de licences. Son expérience auprès des autorités thaïlandaises est un atout précieux pour la fluidité des procédures."
+        "bio": "Coordinateur de projets du cabinet, Pasakorn Nuntutchote prend en charge la coordination administrative des dossiers d'immigration, de constitution de société et de licences. Son expérience auprès des autorités thaïlandaises est un atout précieux pour la fluidité des procédures."
       },
       "nai": {
         "name": "Nai Khunsriuchen",
-        "role": "Legal Assistant",
+        "role": "Assistante juridique",
         "shortBio": "Assistance contentieuse et rédactionnelle.",
-        "bio": "Legal Assistant rattachée à l'équipe contentieuse, Nai Khunsriuchen assure le suivi des procédures judiciaires devant les juridictions thaïlandaises, la préparation des dossiers et la rédaction des actes en thaï et en anglais."
+        "bio": "Assistante juridique rattachée à l'équipe contentieuse, Nai Khunsriuchen assure le suivi des procédures judiciaires devant les juridictions thaïlandaises, la préparation des dossiers et la rédaction des actes en thaï et en anglais."
       }
     },
     "publications": {
@@ -347,6 +363,7 @@
   },
   "expertises": {
     "title": "Nos expertises",
+    "metaTitle": "Expertises — droit thaïlandais & international",
     "metaDescription": "Quatre piliers d'expertise — Personnes & Famille, Entreprises, Immobilier, Innovation — couvrant douze domaines du droit thaïlandais et international.",
     "hero": {
       "eyebrow": "Nos domaines d'intervention",
@@ -414,6 +431,7 @@
   },
   "contact": {
     "title": "Contact",
+    "metaTitle": "Contact — cabinet d'avocats Bangkok & Hua Hin",
     "metaDescription": "Contactez MILA International Legal Advice à Bangkok ou Hua Hin. Première consultation sur rendez-vous, réponse sous 24h ouvrées.",
     "hero": {
       "eyebrow": "Nous écrire",
@@ -514,6 +532,7 @@
   },
   "legal": {
     "title": "Mentions légales et confidentialité",
+    "metaTitle": "Mentions légales — RGPD & confidentialité",
     "metaDescription": "Mentions légales, politique de confidentialité, RGPD et politique cookies de MILA International Legal Advice.",
     "hero": {
       "eyebrow": "Informations légales",
@@ -541,7 +560,7 @@
           "phone": { "label": "Téléphone", "value": "+66 (0)97 180 5845" },
           "email": { "label": "Email", "value": "info@mila-law.com" },
           "representative": { "label": "Représentant légal", "value": "Maître Pisut Rakwong, fondateur et Managing Partner" },
-          "registration": { "label": "Numéro d'enregistrement", "value": "Thai Company Registration n° à compléter" }
+          "registration": { "label": "Numéro d'enregistrement", "value": "Communiqué sur demande à info@mila-law.com" }
         }
       },
       "hosting": {
@@ -596,8 +615,8 @@
       "law": {
         "title": "Loi applicable",
         "paragraphs": {
-          "p1": "Le présent site est régi par le droit thaïlandais. Toutefois, conformément aux engagements professionnels du cabinet, les ressortissants français peuvent invoquer les dispositions du droit français applicables à la relation client (notamment en matière de protection des données et de droit de la consommation).",
-          "p2": "En cas de litige et à défaut de résolution amiable, les tribunaux compétents seront, selon la nature de la relation, ceux du siège du cabinet à Bangkok ou ceux du domicile du client au sein de l'Union européenne."
+          "p1": "Les présentes mentions légales relatives au site web sont régies par le droit thaïlandais. Les dispositions impératives de la loi du pays de résidence habituelle de l'utilisateur, notamment en matière de protection des données personnelles, s'appliquent dans la mesure prévue par cette législation.",
+          "p2": "Tout litige relatif au site fera l'objet d'une tentative de résolution amiable préalable. À défaut, les tribunaux compétents sont déterminés conformément aux règles de compétence applicables. Les présentes informations ne constituent pas un conseil juridique ; pour toute question relative à votre situation, contactez le cabinet."
         }
       }
     }

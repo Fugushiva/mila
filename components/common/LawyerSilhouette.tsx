@@ -7,14 +7,19 @@ type Props = {
   className?: string;
 };
 
+/**
+ * Palettes reference design-system tokens (see globals.css `:root`).
+ * `lead` uses primary + secondary, `default` uses primary-soft + secondary-soft.
+ * Keeping CSS variable references means a future token change ripples here too.
+ */
 const PALETTES = {
   lead: {
-    bg: "#0B1F3A",
-    accent: "#C8A96A",
+    bg: "var(--color-primary)",
+    accent: "var(--color-secondary)",
   },
   default: {
-    bg: "#1A3556",
-    accent: "#D4B97E",
+    bg: "var(--color-primary-soft)",
+    accent: "var(--color-secondary-soft)",
   },
 } as const;
 
@@ -38,7 +43,7 @@ export function LawyerSilhouette({
       {/* Background tile */}
       <rect x="0" y="0" width="200" height="200" rx="20" ry="20" fill={bgColor} />
       {/* Head circle */}
-      <circle cx="100" cy="70" r="32" fill="#FAFAF7" fillOpacity="0.12" />
+      <circle cx="100" cy="70" r="32" fill="var(--color-text-inverse)" fillOpacity="0.12" />
       {/* Shoulders trapezoid */}
       <path d="M30 200 L60 130 L140 130 L170 200 Z" fill={accent} fillOpacity="0.18" />
       {/* Suit collar V */}
@@ -53,7 +58,7 @@ export function LawyerSilhouette({
         fontFamily="Georgia, 'Times New Roman', serif"
         fontSize="22"
         fontWeight="500"
-        fill="#FAFAF7"
+        fill="var(--color-text-inverse)"
         fillOpacity="0.85"
       >
         {initials}

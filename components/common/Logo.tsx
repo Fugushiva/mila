@@ -35,8 +35,9 @@ export function Logo({
   tone = "navy",
   className,
 }: LogoProps) {
-  const wordmarkColor = tone === "light" ? "#FAFAF7" : "#0B1F3A";
-  const tagColor = "#C8A96A";
+  // Wordmark uses `currentColor` and is driven by the wrapper's text color
+  // class so it stays in sync with the design tokens (no hex hardcoded here).
+  const wordmarkClass = tone === "light" ? "text-text-inverse" : "text-primary";
 
   const dimensions =
     size === "md"
@@ -48,7 +49,8 @@ export function Logo({
       href={`/${locale}`}
       aria-label={ariaLabel ?? "MILA — Home"}
       className={cn(
-        "inline-flex items-center rounded-sm",
+        "inline-flex cursor-pointer items-center rounded-sm",
+        wordmarkClass,
         "transition-opacity duration-200 hover:opacity-80",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
         className,
@@ -58,12 +60,11 @@ export function Logo({
         width={dimensions.width}
         height={dimensions.height}
         viewBox="0 0 220 60"
-        role="img"
         aria-hidden="true"
         focusable="false"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Wordmark — EB Garamond style, weight 500, slight tracking */}
+        {/* Wordmark — inherits color from parent (text-primary / text-text-inverse) */}
         <text
           x="0"
           y="36"
@@ -71,11 +72,11 @@ export function Logo({
           fontSize="36"
           fontWeight="500"
           letterSpacing="2"
-          fill={wordmarkColor}
+          fill="currentColor"
         >
           MILA
         </text>
-        {/* Tagline — small uppercase, or rosé */}
+        {/* Tagline — or rosé via design token */}
         <text
           x="0"
           y="54"
@@ -83,7 +84,7 @@ export function Logo({
           fontSize="9"
           fontWeight="700"
           letterSpacing="2.5"
-          fill={tagColor}
+          fill="var(--color-secondary)"
         >
           INTERNATIONAL LEGAL ADVICE
         </text>

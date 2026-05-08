@@ -7,8 +7,13 @@ import { TeamGrid } from "@/components/sections/TeamGrid";
 import { TEAM_MEMBERS } from "@/lib/data/team";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import { LOCALES } from "@/lib/locales";
+import { BOOKS } from "@/lib/data/books";
 import { JsonLd } from "@/lib/seo/JsonLdScript";
-import { breadcrumbListJsonLd, personJsonLd } from "@/lib/seo/jsonld";
+import {
+  bookJsonLd,
+  breadcrumbListJsonLd,
+  personJsonLd,
+} from "@/lib/seo/jsonld";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mila-law.com";
 
@@ -19,14 +24,14 @@ export async function generateMetadata(
   if (!isLocale(lang)) return {};
   const dict = getDictionary(lang);
   return {
-    title: dict.team.title,
+    title: dict.team.metaTitle,
     description: dict.team.metaDescription,
     alternates: {
       canonical: `/${lang}/equipe`,
       languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}/equipe`])),
     },
     openGraph: {
-      title: dict.team.title,
+      title: `${dict.team.metaTitle} | ${dict.meta.siteName}`,
       description: dict.team.metaDescription,
       url: `${SITE_URL}/${lang}/equipe`,
       type: "website",
@@ -63,6 +68,16 @@ export default async function EquipePage(
               jobTitle: dict.team.members[m.key].role,
               email: m.email,
               knowsLanguage: m.languages.map((c) => dict.team.languages[c]),
+            }),
+          ),
+          // Surface academic publications on the team page too — the books
+          // are the strongest trust signal (Springer / Brill / Cengage).
+          ...BOOKS.map((b) =>
+            bookJsonLd({
+              name: dict.team.publications.items[b.key].title,
+              isbn: b.isbn,
+              publisher: dict.team.publications.items[b.key].publisher,
+              datePublished: dict.team.publications.items[b.key].year,
             }),
           ),
         ]}

@@ -9,8 +9,13 @@ import { TrustBar } from "@/components/sections/TrustBar";
 import { ValueProposition } from "@/components/sections/ValueProposition";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import { LOCALES } from "@/lib/locales";
+import { BOOKS } from "@/lib/data/books";
 import { JsonLd } from "@/lib/seo/JsonLdScript";
-import { breadcrumbListJsonLd, legalServiceJsonLd } from "@/lib/seo/jsonld";
+import {
+  bookJsonLd,
+  breadcrumbListJsonLd,
+  legalServiceJsonLd,
+} from "@/lib/seo/jsonld";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mila-law.com";
 
@@ -20,15 +25,18 @@ export async function generateMetadata(
   const { lang } = await props.params;
   if (!isLocale(lang)) return {};
   const dict = getDictionary(lang);
+  // Home uses the layout's title.default (full brand+tagline), no template
+  // override here. og:title is set explicitly to match a clean SERP.
+  const ogTitle = `${dict.home.metaTitle} | ${dict.meta.siteName}`;
   return {
-    title: dict.home.title,
+    title: { absolute: ogTitle },
     description: dict.meta.description,
     alternates: {
       canonical: `/${lang}`,
       languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}`])),
     },
     openGraph: {
-      title: dict.home.title,
+      title: ogTitle,
       description: dict.meta.description,
       url: `${SITE_URL}/${lang}`,
       type: "website",
@@ -61,6 +69,14 @@ export default async function LocaleHome(props: PageProps<"/[lang]">) {
             description: dict.meta.description,
           }),
           breadcrumbListJsonLd(lang, [{ name: dict.nav.home, path: "/" }]),
+          ...BOOKS.map((b) =>
+            bookJsonLd({
+              name: dict.home.books.items[b.key].title,
+              isbn: b.isbn,
+              publisher: dict.home.books.items[b.key].publisher,
+              datePublished: dict.home.books.items[b.key].year,
+            }),
+          ),
         ]}
       />
       <Hero locale={lang} />

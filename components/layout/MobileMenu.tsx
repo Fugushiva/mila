@@ -18,6 +18,10 @@ type MobileMenuProps = {
   ctaHref: string;
   openLabel: string;
   closeLabel: string;
+  /** Accessible label for the inner `<nav>` (localized). */
+  navLabel: string;
+  /** Visually-hidden title for the dialog (localized). */
+  dialogTitle: string;
   languageSwitchLabel: string;
 };
 
@@ -43,20 +47,52 @@ export function MobileMenu({
   ctaHref,
   openLabel,
   closeLabel,
+  navLabel,
+  dialogTitle,
   languageSwitchLabel,
 }: MobileMenuProps) {
   const [open, setOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
   const panelId = useId();
+  const titleId = useId();
 
-  // Lock background scroll while open + Escape closes.
+  // Lock background scroll while open + Escape closes + focus trap.
   useEffect(() => {
     if (!open) return;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
+    // Capture the trigger element at effect-time so the cleanup callback
+    // doesn't read a stale `ref.current` (React-hooks lint rule).
+    const trigger = triggerRef.current;
+
+    const focusableSelector =
+      'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        return;
+      }
+      if (event.key !== "Tab") return;
+      const panel = panelRef.current;
+      if (!panel) return;
+      const focusables = Array.from(
+        panel.querySelectorAll<HTMLElement>(focusableSelector),
+      ).filter((el) => !el.hasAttribute("inert") && el.offsetParent !== null);
+      if (focusables.length === 0) return;
+      const first = focusables[0]!;
+      const last = focusables[focusables.length - 1]!;
+      const active = document.activeElement as HTMLElement | null;
+      if (event.shiftKey && active === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && active === last) {
+        event.preventDefault();
+        first.focus();
+      }
     };
     document.addEventListener("keydown", onKeyDown);
 
@@ -66,12 +102,15 @@ export function MobileMenu({
     return () => {
       document.body.style.overflow = previousOverflow;
       document.removeEventListener("keydown", onKeyDown);
+      // Restore focus to the trigger when the dialog closes.
+      trigger?.focus();
     };
   }, [open]);
 
   return (
     <>
       <button
+        ref={triggerRef}
         type="button"
         onClick={() => setOpen(true)}
         aria-label={openLabel}
@@ -99,15 +138,20 @@ export function MobileMenu({
       />
 
       <div
+        ref={panelRef}
         id={panelId}
         role="dialog"
         aria-modal="true"
+        aria-labelledby={titleId}
         aria-hidden={!open}
         className={cn(
           "fixed inset-y-0 right-0 z-50 flex w-full max-w-sm flex-col bg-bg shadow-xl transition-transform duration-300 ease-out lg:hidden",
           open ? "translate-x-0" : "translate-x-full",
         )}
       >
+        <h2 id={titleId} className="sr-only">
+          {dialogTitle}
+        </h2>
         <div className="flex items-center justify-between border-b border-border px-6 py-4">
           <Logo locale={locale} size="sm" tone="navy" />
           <button
@@ -125,7 +169,7 @@ export function MobileMenu({
           </button>
         </div>
 
-        <nav className="flex-1 overflow-y-auto px-6 py-8" aria-label="Mobile">
+        <nav className="flex-1 overflow-y-auto px-6 py-8" aria-label={navLabel}>
           <ul className="flex flex-col gap-1">
             {navItems.map((item) => (
               <li key={item.href}>

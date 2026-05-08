@@ -90,6 +90,44 @@ export function personJsonLd(person: PersonInput) {
   };
 }
 
+type BookInput = {
+  name: string;
+  isbn: string;
+  publisher: string;
+  datePublished: string;
+  /** Author name. Defaults to "Alessandro Stasi". */
+  authorName?: string;
+  /** External URL (publisher / library record). Optional. */
+  url?: string;
+};
+
+/**
+ * `Book` schema — used to surface the firm's reference publications
+ * (Springer / Brill / Cengage) on the home and team pages, satisfying the
+ * "trust signal" recommendation from `docs/audit/01-current-site-audit.md` §1.5.
+ */
+export function bookJsonLd(book: BookInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    name: book.name,
+    isbn: book.isbn,
+    inLanguage: "en",
+    bookFormat: "https://schema.org/Hardcover",
+    author: {
+      "@type": "Person",
+      name: book.authorName ?? "Alessandro Stasi",
+      affiliation: {
+        "@type": "Organization",
+        name: "Mahidol University",
+      },
+    },
+    publisher: { "@type": "Organization", name: book.publisher },
+    datePublished: book.datePublished,
+    url: book.url,
+  };
+}
+
 type Crumb = { name: string; path: string };
 
 export function breadcrumbListJsonLd(locale: Locale, crumbs: Crumb[]) {

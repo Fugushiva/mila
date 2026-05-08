@@ -21,14 +21,14 @@ export async function generateMetadata(
   if (!isLocale(lang)) return {};
   const dict = getDictionary(lang);
   return {
-    title: dict.contact.title,
+    title: dict.contact.metaTitle,
     description: dict.contact.metaDescription,
     alternates: {
       canonical: `/${lang}/contact`,
       languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}/contact`])),
     },
     openGraph: {
-      title: dict.contact.title,
+      title: `${dict.contact.metaTitle} | ${dict.meta.siteName}`,
       description: dict.contact.metaDescription,
       url: `${SITE_URL}/${lang}/contact`,
       type: "website",

@@ -5,6 +5,7 @@ import { JsonLd } from "@/lib/seo/JsonLdScript";
 import { organizationJsonLd } from "@/lib/seo/jsonld";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { ebGaramond, lato } from "@/lib/fonts";
 import { getDictionary, isLocale, LOCALES } from "@/lib/i18n";
 import "../globals.css";
@@ -111,6 +112,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[lang]">) {
         >
           {dict.common.skipToContent}
         </a>
+        <ScrollProgress />
         <Header locale={lang} />
         <main id="main" className="flex flex-1 flex-col">
           {props.children}

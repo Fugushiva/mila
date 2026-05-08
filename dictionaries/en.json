@@ -23,7 +23,11 @@
     "contact": "Contact",
     "bookMeeting": "Book a meeting",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "primaryNavLabel": "Primary navigation",
+    "mobileNavLabel": "Mobile navigation",
+    "mobileDialogTitle": "Navigation menu",
+    "logoLabel": "MILA — Home"
   },
   "footer": {
     "tagline": "French-speaking legal counsel in Bangkok and Hua Hin since 2012.",
@@ -42,13 +46,23 @@
   },
   "home": {
     "title": "Home",
+    "metaTitle": "French- and Italian-speaking lawyers in Bangkok & Hua Hin",
     "hero": {
+      "eyebrow": "Bangkok · Hua Hin — Since 2012",
       "h1": "French-speaking legal counsel in Thailand",
+      "h1Emphasis": "Thailand",
       "subtitle": "Trilingual law firm in Bangkok and Hua Hin. Business law, real estate, immigration and international taxation.",
-      "imageAlt": "Panoramic view of Bangkok skyscrapers at dusk"
+      "imageAlt": "Panoramic view of Bangkok skyscrapers at dusk",
+      "scrollHint": "Discover",
+      "stats": {
+        "years": { "value": 12, "suffix": "+", "label": "Years of practice" },
+        "languages": { "value": 3, "suffix": "", "label": "Working languages" },
+        "cities": { "value": 2, "suffix": "", "label": "Offices in Thailand" },
+        "publications": { "value": 4, "suffix": "+", "label": "Published books" }
+      }
     },
     "trustBar": {
-      "label": "Featured in",
+      "label": "Published by · Teaching at",
       "logos": {
         "springer": "Springer",
         "brill": "Brill",
@@ -173,6 +187,7 @@
   },
   "cabinet": {
     "title": "About the firm",
+    "metaTitle": "About — French-speaking law firm in Thailand since 2012",
     "metaDescription": "History, values and geographic reach of MILA International Legal Advice — the leading French-speaking law firm in Bangkok and Hua Hin since 2012.",
     "hero": {
       "eyebrow": "About",
@@ -184,7 +199,7 @@
       "title": "Expertise built over more than a decade",
       "paragraphs": {
         "p1": "Founded in 2012 in Bangkok, MILA International Legal Advice was created on the conviction that a French-speaking, international law firm could deliver unique value to entrepreneurs, investors and families operating in Thailand.",
-        "p2": "Over the years, our team has supported hundreds of clients on their most demanding projects — company incorporations, real-estate acquisitions, cross-border disputes, wealth structuring — combining the rigour of European civil law with deep, local knowledge of Thai law.",
+        "p2": "Over the years, our team has supported French-speaking, Italian-speaking and international clients on demanding matters — company incorporations, real-estate acquisitions, cross-border disputes, wealth structuring — combining the rigour of European civil law with deep, local knowledge of Thai law.",
         "p3": "Today, MILA is recognised as both an academic and practical reference on Thai law, with publications at Springer, Brill and Cengage, and privileged ties with Mahidol University."
       },
       "imageAlt": "Interior view of a law firm office in Bangkok"
@@ -263,6 +278,7 @@
   },
   "team": {
     "title": "Our team",
+    "metaTitle": "Team — trilingual FR / EN / IT lawyers in Bangkok",
     "metaDescription": "The team behind MILA International Legal Advice — French-, English- and Italian-speaking lawyers, counsel and tax advisors in Bangkok and Hua Hin.",
     "hero": {
       "eyebrow": "Our team",
@@ -347,6 +363,7 @@
   },
   "expertises": {
     "title": "Our practice areas",
+    "metaTitle": "Practice areas — Thai & international law",
     "metaDescription": "Four pillars of expertise — People & Family, Business, Real Estate, Innovation — covering twelve practice areas of Thai and international law.",
     "hero": {
       "eyebrow": "Our practice areas",
@@ -414,6 +431,7 @@
   },
   "contact": {
     "title": "Contact",
+    "metaTitle": "Contact — law firm in Bangkok & Hua Hin",
     "metaDescription": "Contact MILA International Legal Advice in Bangkok or Hua Hin. First consultation by appointment, response within 24 business hours.",
     "hero": {
       "eyebrow": "Get in touch",
@@ -514,6 +532,7 @@
   },
   "legal": {
     "title": "Legal notice and privacy",
+    "metaTitle": "Legal notice — GDPR & privacy",
     "metaDescription": "Legal notice, privacy policy, GDPR and cookie policy of MILA International Legal Advice.",
     "hero": {
       "eyebrow": "Legal information",
@@ -541,7 +560,7 @@
           "phone": { "label": "Phone", "value": "+66 (0)97 180 5845" },
           "email": { "label": "Email", "value": "info@mila-law.com" },
           "representative": { "label": "Legal representative", "value": "Pisut Rakwong, founder and Managing Partner" },
-          "registration": { "label": "Registration number", "value": "Thai Company Registration No. to be completed" }
+          "registration": { "label": "Registration number", "value": "Available on request at info@mila-law.com" }
         }
       },
       "hosting": {
@@ -596,8 +615,8 @@
       "law": {
         "title": "Applicable law",
         "paragraphs": {
-          "p1": "This site is governed by Thai law. However, in line with the firm's professional commitments, French citizens may invoke the provisions of French law applicable to the client relationship (in particular regarding data protection and consumer law).",
-          "p2": "In the event of a dispute and failing an amicable resolution, the competent courts will be, depending on the nature of the relationship, those of the firm's headquarters in Bangkok or those of the client's domicile within the European Union."
+          "p1": "These website legal terms are governed by Thai law. Mandatory provisions of the user's country of habitual residence, in particular concerning personal-data protection, apply to the extent provided by that legislation.",
+          "p2": "Any dispute relating to the website shall first be addressed through an attempt at amicable resolution. Failing that, the competent courts shall be determined in accordance with applicable jurisdictional rules. The present information does not constitute legal advice; for any question relating to your situation, please contact the firm."
         }
       }
     }

@@ -19,7 +19,7 @@ export async function generateMetadata(
   if (!isLocale(lang)) return {};
   const dict = getDictionary(lang);
   return {
-    title: dict.expertises.title,
+    title: dict.expertises.metaTitle,
     description: dict.expertises.metaDescription,
     alternates: {
       canonical: `/${lang}/expertises`,
@@ -28,7 +28,7 @@ export async function generateMetadata(
       ),
     },
     openGraph: {
-      title: dict.expertises.title,
+      title: `${dict.expertises.metaTitle} | ${dict.meta.siteName}`,
       description: dict.expertises.metaDescription,
       url: `${SITE_URL}/${lang}/expertises`,
       type: "website",

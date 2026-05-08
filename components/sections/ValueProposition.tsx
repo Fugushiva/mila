@@ -6,6 +6,12 @@ import {
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { GoldOrnament } from "@/components/motion/GoldOrnament";
+import {
+  MotionReveal,
+  MotionStagger,
+  MotionStaggerItem,
+} from "@/components/motion/MotionReveal";
 import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/locales";
 import type { LucideIcon } from "lucide-react";
@@ -26,20 +32,28 @@ export function ValueProposition({ locale }: Props) {
   const dict = getDictionary(locale);
 
   return (
-    <section className="bg-bg py-16 md:py-24">
+    <section className="bg-bg py-20 md:py-28">
       <Container>
-        <SectionHeading
-          title={dict.home.valueProp.title}
-          as="h2"
-          align="center"
-        />
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <MotionReveal>
+          <SectionHeading
+            title={dict.home.valueProp.title}
+            as="h2"
+            align="center"
+          />
+        </MotionReveal>
+        <div className="mt-6 flex justify-center">
+          <GoldOrnament variant="compact" />
+        </div>
+        <MotionStagger
+          stagger={0.1}
+          className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4"
+        >
           {VALUE_PROP_KEYS.map((key) => {
             const Icon = icons[key];
             const item = dict.home.valueProp.items[key];
             return (
-              <div key={key} className="text-center">
-                <div className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary text-secondary">
+              <MotionStaggerItem key={key} className="group text-center">
+                <div className="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-secondary ring-1 ring-secondary/20 transition-all duration-500 group-hover:bg-secondary group-hover:text-primary group-hover:shadow-[0_0_0_8px_rgba(200,169,106,0.12)]">
                   <Icon strokeWidth={1.5} size={28} aria-hidden />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-medium text-primary">
@@ -48,10 +62,10 @@ export function ValueProposition({ locale }: Props) {
                 <p className="mt-3 font-sans text-sm leading-relaxed text-text-muted">
                   {item.description}
                 </p>
-              </div>
+              </MotionStaggerItem>
             );
           })}
-        </div>
+        </MotionStagger>
       </Container>
     </section>
   );

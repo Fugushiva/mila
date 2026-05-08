@@ -48,12 +48,12 @@ export function CoverageMap({ locale }: Props) {
                 >
                   <stop
                     offset="0%"
-                    stopColor="#0B1F3A"
+                    stopColor="var(--color-primary)"
                     stopOpacity="0.08"
                   />
                   <stop
                     offset="100%"
-                    stopColor="#0B1F3A"
+                    stopColor="var(--color-primary)"
                     stopOpacity="0.18"
                   />
                 </linearGradient>
@@ -62,46 +62,46 @@ export function CoverageMap({ locale }: Props) {
               <path
                 d="M 160 30 C 175 35 188 50 192 70 C 196 92 188 110 196 130 C 206 152 220 168 218 188 C 216 210 200 222 200 248 C 200 270 214 285 214 308 C 214 330 200 348 188 358 C 178 368 178 380 184 396 C 190 412 200 426 196 442 C 192 456 178 462 168 458 C 160 454 156 444 158 432 C 160 418 156 406 148 396 C 138 386 130 376 132 360 C 134 344 142 332 138 318 C 132 302 118 294 116 274 C 114 252 124 240 122 220 C 120 200 108 188 110 168 C 112 148 124 136 124 116 C 124 96 116 84 122 66 C 128 50 144 38 160 30 Z"
                 fill="url(#thFill)"
-                stroke="#0B1F3A"
+                stroke="var(--color-primary)"
                 strokeWidth="1.5"
                 strokeOpacity="0.4"
               />
               {/* Bangkok marker */}
               <g>
-                <circle cx="156" cy="220" r="14" fill="#C8A96A" fillOpacity="0.25" />
-                <circle cx="156" cy="220" r="7" fill="#C8A96A" />
-                <circle cx="156" cy="220" r="3" fill="#0B1F3A" />
+                <circle cx="156" cy="220" r="14" fill="var(--color-secondary)" fillOpacity="0.25" />
+                <circle cx="156" cy="220" r="7" fill="var(--color-secondary)" />
+                <circle cx="156" cy="220" r="3" fill="var(--color-primary)" />
                 <text
                   x="174"
                   y="225"
                   fontFamily="Lato, sans-serif"
                   fontSize="13"
                   fontWeight="700"
-                  fill="#0B1F3A"
+                  fill="var(--color-primary)"
                 >
                   {coverage.offices.bangkok.label}
                 </text>
               </g>
               {/* Hua Hin marker */}
               <g>
-                <circle cx="148" cy="282" r="10" fill="#C8A96A" fillOpacity="0.25" />
-                <circle cx="148" cy="282" r="5" fill="#C8A96A" />
+                <circle cx="148" cy="282" r="10" fill="var(--color-secondary)" fillOpacity="0.25" />
+                <circle cx="148" cy="282" r="5" fill="var(--color-secondary)" />
                 <text
                   x="166"
                   y="287"
                   fontFamily="Lato, sans-serif"
                   fontSize="13"
                   fontWeight="700"
-                  fill="#0B1F3A"
+                  fill="var(--color-primary)"
                 >
                   {coverage.offices.huaHin.label}
                 </text>
               </g>
               {/* Intervention markers (Phuket, Pattaya, Chiang Mai, Koh Samui) */}
-              <circle cx="120" cy="370" r="4" fill="#0B1F3A" fillOpacity="0.5" />
-              <circle cx="172" cy="248" r="4" fill="#0B1F3A" fillOpacity="0.5" />
-              <circle cx="142" cy="100" r="4" fill="#0B1F3A" fillOpacity="0.5" />
-              <circle cx="158" cy="400" r="4" fill="#0B1F3A" fillOpacity="0.5" />
+              <circle cx="120" cy="370" r="4" fill="var(--color-primary)" fillOpacity="0.5" />
+              <circle cx="172" cy="248" r="4" fill="var(--color-primary)" fillOpacity="0.5" />
+              <circle cx="142" cy="100" r="4" fill="var(--color-primary)" fillOpacity="0.5" />
+              <circle cx="158" cy="400" r="4" fill="var(--color-primary)" fillOpacity="0.5" />
             </svg>
           </div>
 
