@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import { ebGaramond, lato } from "@/lib/fonts";
 import { getDictionary, isLocale, LOCALES } from "@/lib/i18n";
 import "../globals.css";
@@ -41,9 +43,6 @@ export async function generateMetadata(
     metadataBase: new URL(SITE_URL),
     alternates: {
       canonical: `/${lang}`,
-      // Only emit `hreflang` alternates when more than one locale is shipped.
-      // For Phase 1 (FR-only) this stays empty; Phase 2 will populate it
-      // automatically once `LOCALES` includes `en` / `it`.
       languages: isMultiLocale
         ? Object.fromEntries(LOCALES.map((l) => [l, `/${l}`]))
         : undefined,
@@ -82,16 +81,18 @@ export default async function LocaleLayout(props: LayoutProps<"/[lang]">) {
       className={`${ebGaramond.variable} ${lato.variable} antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-bg text-text">
+      <body className="flex min-h-screen flex-col bg-bg text-text">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-text-inverse focus:shadow-lg"
         >
           {dict.common.skipToContent}
         </a>
-        <main id="main" className="flex min-h-screen flex-col">
+        <Header locale={lang} />
+        <main id="main" className="flex flex-1 flex-col">
           {props.children}
         </main>
+        <Footer locale={lang} />
       </body>
     </html>
   );

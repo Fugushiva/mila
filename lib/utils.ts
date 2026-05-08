@@ -1,12 +1,16 @@
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
 /**
- * Class-name joiner. Lightweight stand-in for clsx/tailwind-merge during
- * PR #1. We can swap in `clsx` + `tailwind-merge` in PR #2 when the UI
- * primitives ship if we hit class-conflict cases.
+ * Class-name joiner with Tailwind conflict resolution.
+ * Standard pattern used across shadcn/ui, vercel/next-learn etc.
+ *
+ * Example:
+ *   cn('px-2 py-1', 'px-4', isActive && 'bg-primary')
+ *   // -> 'py-1 px-4 bg-primary'   (px-2 wins-out by px-4 via twMerge)
  */
-export function cn(
-  ...inputs: Array<string | number | boolean | null | undefined>
-): string {
-  return inputs.filter(Boolean).join(" ");
+export function cn(...inputs: ClassValue[]): string {
+  return twMerge(clsx(inputs));
 }
 
 /**
