@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { LOCALES, DEFAULT_LOCALE, type Locale } from "@/lib/i18n";
+import { LOCALES, DEFAULT_LOCALE, type Locale } from "@/lib/locales";
 
 /**
  * Locale-routing proxy (Next.js 16 successor to middleware).

@@ -21,7 +21,9 @@
     "team": "Team",
     "expertises": "Practice areas",
     "contact": "Contact",
-    "bookMeeting": "Book a meeting"
+    "bookMeeting": "Book a meeting",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "footer": {
     "tagline": "French-speaking legal counsel in Bangkok and Hua Hin since 2012.",

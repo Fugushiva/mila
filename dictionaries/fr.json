@@ -21,7 +21,9 @@
     "team": "Équipe",
     "expertises": "Expertises",
     "contact": "Contact",
-    "bookMeeting": "Prendre RDV"
+    "bookMeeting": "Prendre RDV",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "footer": {
     "tagline": "Conseil juridique francophone à Bangkok et Hua Hin depuis 2012.",
