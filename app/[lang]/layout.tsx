@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { Toaster } from "sonner";
+import { JsonLd } from "@/lib/seo/JsonLdScript";
+import { organizationJsonLd } from "@/lib/seo/jsonld";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ebGaramond, lato } from "@/lib/fonts";
@@ -41,6 +43,25 @@ export async function generateMetadata(
       template: `%s | ${dict.meta.siteName}`,
     },
     description: dict.meta.description,
+    keywords: [
+      "law firm Bangkok",
+      "French lawyer Thailand",
+      "Italian lawyer Thailand",
+      "international legal advice",
+      "Hua Hin lawyer",
+      "business law Thailand",
+      "real estate Thailand",
+      "immigration Thailand",
+      "Mahidol University law",
+    ],
+    authors: [{ name: dict.meta.siteName }],
+    creator: dict.meta.siteName,
+    publisher: dict.meta.siteName,
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
     metadataBase: new URL(SITE_URL),
     alternates: {
       canonical: `/${lang}`,
@@ -83,6 +104,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[lang]">) {
       suppressHydrationWarning
     >
       <body className="flex min-h-screen flex-col bg-bg text-text">
+        <JsonLd data={organizationJsonLd(lang)} />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-text-inverse focus:shadow-lg"

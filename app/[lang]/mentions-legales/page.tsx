@@ -5,10 +5,15 @@ import { Prose } from "@/components/common/Prose";
 import { PageHero } from "@/components/sections/PageHero";
 import { Container } from "@/components/ui/Container";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { LOCALES } from "@/lib/locales";
+import { JsonLd } from "@/lib/seo/JsonLdScript";
+import { breadcrumbListJsonLd } from "@/lib/seo/jsonld";
 
 type MentionsLegalesPageProps = {
   params: Promise<{ lang: string }>;
 };
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mila-law.com";
 
 const TOC_LINK_CLASS =
   "text-primary underline underline-offset-2 decoration-secondary decoration-2 transition-colors hover:text-primary-soft";
@@ -22,6 +27,18 @@ export async function generateMetadata(
   return {
     title: dict.legal.title,
     description: dict.legal.metaDescription,
+    alternates: {
+      canonical: `/${lang}/mentions-legales`,
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, `/${l}/mentions-legales`]),
+      ),
+    },
+    openGraph: {
+      title: dict.legal.title,
+      description: dict.legal.metaDescription,
+      url: `${SITE_URL}/${lang}/mentions-legales`,
+      type: "website",
+    },
     robots: { index: false, follow: true },
   };
 }
@@ -37,6 +54,12 @@ export default async function MentionsLegalesPage(
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbListJsonLd(lang, [
+          { name: dict.nav.home, path: "/" },
+          { name: dict.legal.title, path: "/mentions-legales" },
+        ])}
+      />
       <PageHero
         eyebrow={legal.hero.eyebrow}
         title={legal.hero.h1}

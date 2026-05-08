@@ -8,6 +8,11 @@ import { TeamPreview } from "@/components/sections/TeamPreview";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { ValueProposition } from "@/components/sections/ValueProposition";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { LOCALES } from "@/lib/locales";
+import { JsonLd } from "@/lib/seo/JsonLdScript";
+import { breadcrumbListJsonLd, legalServiceJsonLd } from "@/lib/seo/jsonld";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mila-law.com";
 
 export async function generateMetadata(
   props: PageProps<"/[lang]">,
@@ -18,6 +23,16 @@ export async function generateMetadata(
   return {
     title: dict.home.title,
     description: dict.meta.description,
+    alternates: {
+      canonical: `/${lang}`,
+      languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}`])),
+    },
+    openGraph: {
+      title: dict.home.title,
+      description: dict.meta.description,
+      url: `${SITE_URL}/${lang}`,
+      type: "website",
+    },
   };
 }
 
@@ -35,9 +50,19 @@ export async function generateMetadata(
 export default async function LocaleHome(props: PageProps<"/[lang]">) {
   const { lang } = await props.params;
   if (!isLocale(lang)) notFound();
+  const dict = getDictionary(lang);
 
   return (
     <>
+      <JsonLd
+        data={[
+          legalServiceJsonLd(lang, {
+            name: dict.meta.siteName,
+            description: dict.meta.description,
+          }),
+          breadcrumbListJsonLd(lang, [{ name: dict.nav.home, path: "/" }]),
+        ]}
+      />
       <Hero locale={lang} />
       <TrustBar locale={lang} />
       <ValueProposition locale={lang} />
