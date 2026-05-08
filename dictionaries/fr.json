@@ -346,7 +346,71 @@
     }
   },
   "expertises": {
-    "title": "Nos expertises"
+    "title": "Nos expertises",
+    "metaDescription": "Quatre piliers d'expertise — Personnes & Famille, Entreprises, Immobilier, Innovation — couvrant douze domaines du droit thaïlandais et international.",
+    "hero": {
+      "eyebrow": "Nos domaines d'intervention",
+      "h1": "Nos expertises",
+      "subtitle": "Une expertise transversale du droit thaïlandais et international, structurée autour de quatre piliers et douze domaines d'intervention."
+    },
+    "navLabel": "Naviguer entre les piliers",
+    "learnMore": "En savoir plus",
+    "pillars": {
+      "people": {
+        "title": "Personnes & Famille",
+        "intro": "Accompagnement des particuliers, des familles et des expatriés sur leur installation, leurs droits et la transmission de leur patrimoine."
+      },
+      "business": {
+        "title": "Entreprises",
+        "intro": "Conseil aux dirigeants et investisseurs sur la création, la gouvernance, la fiscalité et le développement de leurs activités en Thaïlande et à l'international."
+      },
+      "realestate": {
+        "title": "Immobilier",
+        "intro": "Sécurisation des opérations immobilières, du foncier au résidentiel, et règlement des litiges associés."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "intro": "Protection des actifs immatériels et conformité réglementaire pour les entreprises de la tech, de la propriété intellectuelle et des données personnelles."
+      }
+    },
+    "items": {
+      "business": {
+        "longDescription": "Création de société, choix de la structure (Co. Ltd, BOI, succursale), gouvernance d'entreprise, contrats commerciaux et accords de joint-venture."
+      },
+      "realEstate": {
+        "longDescription": "Acquisition et cession de biens, baux long terme, copropriétés, montages d'investissement et accompagnement notarial."
+      },
+      "immigration": {
+        "longDescription": "Visas long séjour, permis de travail, programme LTR, résidence permanente et regroupement familial."
+      },
+      "tax": {
+        "longDescription": "Résidence fiscale, conventions internationales, optimisation transfrontalière et obligations déclaratives en Thaïlande comme à l'étranger."
+      },
+      "family": {
+        "longDescription": "Mariage et union, divorce contentieux ou amiable, autorité parentale, successions internationales et planification patrimoniale."
+      },
+      "labor": {
+        "longDescription": "Rédaction de contrats de travail, conformité sociale, ruptures, mobilité internationale et gestion des litiges RH."
+      },
+      "ip": {
+        "longDescription": "Dépôt et défense de marques, brevets, dessins et modèles, contrats de licence et lutte contre la contrefaçon."
+      },
+      "litigation": {
+        "longDescription": "Représentation devant les juridictions thaïlandaises et arbitrales, exécution de décisions étrangères et stratégies pré-contentieuses."
+      },
+      "criminal": {
+        "longDescription": "Défense en droit pénal des affaires, programmes de conformité, prévention de la fraude et enquêtes internes."
+      },
+      "compliance": {
+        "longDescription": "Conformité PDPA / RGPD, audits réglementaires, gouvernance des données et politiques de protection des informations."
+      },
+      "ma": {
+        "longDescription": "Audits d'acquisition (legal due diligence), structuration des opérations, négociation de la documentation et accompagnement post-closing."
+      },
+      "wealth": {
+        "longDescription": "Trusts, holdings internationales, assurances vie, pactes successoraux et structures de transmission entre la Thaïlande et l'Europe."
+      }
+    }
   },
   "contact": {
     "title": "Contact"
