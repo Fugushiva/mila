@@ -11,7 +11,7 @@
     "ctaCallUs": "Call us",
     "ctaContactUs": "Contact us",
     "ctaLearnMore": "Learn more",
-    "ctaDiscoverExpertise": "Our practice areas",
+    "ctaDiscoverExpertise": "Our expertise",
     "ctaDiscoverTeam": "Meet the team",
     "and": "and"
   },
@@ -19,7 +19,7 @@
     "home": "Home",
     "cabinet": "About",
     "team": "Team",
-    "expertises": "Practice areas",
+    "expertises": "Expertise",
     "contact": "Contact",
     "bookMeeting": "Book a meeting",
     "openMenu": "Open menu",
@@ -38,14 +38,14 @@
     "email": "info@mila-law.com",
     "hours": "Mon-Fri: 9am-6pm (Bangkok time)",
     "copyright": "© {year} MILA International Legal Advice. All rights reserved.",
-    "languageSwitch": "Switch language"
+    "languageSwitch": "Change language"
   },
   "home": {
     "title": "Home",
     "hero": {
       "h1": "French-speaking legal counsel in Thailand",
       "subtitle": "Trilingual law firm in Bangkok and Hua Hin. Business law, real estate, immigration and international taxation.",
-      "imageAlt": "Panoramic view of the Bangkok skyline at dusk"
+      "imageAlt": "Panoramic view of Bangkok skyscrapers at dusk"
     },
     "trustBar": {
       "label": "Featured in",
@@ -57,23 +57,23 @@
       }
     },
     "valueProp": {
-      "title": "Unique expertise in Thailand",
+      "title": "A unique expertise in Thailand",
       "items": {
         "francophone": {
-          "title": "French-speaking attorneys",
-          "description": "Counsel in your language, with the rigor of French legal training."
+          "title": "French-speaking lawyers",
+          "description": "Counsel in your language, with the precision of French legal craft."
         },
         "academic": {
           "title": "Academic reference",
-          "description": "Publications with Springer, Brill, and Cengage. Ties with Mahidol University."
+          "description": "Publications at Springer, Brill and Cengage. Ties with Mahidol University."
         },
         "trilingual": {
           "title": "Trilingual FR / EN / IT",
-          "description": "Three working languages to serve an international clientele."
+          "description": "Three working languages serving an international clientele."
         },
         "local": {
           "title": "Bangkok + Hua Hin",
-          "description": "Local presence, with interventions in Phuket, Pattaya, Chiang Mai."
+          "description": "Local presence, with interventions in Phuket, Pattaya and Chiang Mai."
         }
       }
     },
@@ -81,11 +81,11 @@
       "eyebrow": "Practice areas",
       "title": "Our areas of expertise",
       "intro": "Cross-cutting expertise in Thai and international law for individuals and French-speaking businesses.",
-      "ctaAll": "See all practice areas",
+      "ctaAll": "See all our practice areas",
       "items": {
         "business": {
           "title": "Business law",
-          "description": "Company formation, governance, commercial contracts."
+          "description": "Company incorporation, governance, commercial contracts."
         },
         "realEstate": {
           "title": "Real estate",
@@ -101,11 +101,11 @@
         },
         "family": {
           "title": "Family law",
-          "description": "Marriage, divorce, succession and estate planning."
+          "description": "Marriage, divorce, succession and wealth planning."
         },
         "labor": {
           "title": "Employment law",
-          "description": "Contracts, social compliance, HR dispute management."
+          "description": "Contracts, labour compliance, HR dispute management."
         },
         "ip": {
           "title": "Intellectual property",
@@ -113,19 +113,19 @@
         },
         "litigation": {
           "title": "Litigation & arbitration",
-          "description": "Representation before Thai courts and arbitral tribunals."
+          "description": "Representation before courts and arbitral tribunals."
         },
         "criminal": {
-          "title": "White-collar criminal law",
+          "title": "Business criminal law",
           "description": "Defence, compliance, fraud prevention."
         },
         "compliance": {
           "title": "Compliance & GDPR",
-          "description": "Thai PDPA, EU GDPR, regulatory audits."
+          "description": "Thai PDPA, European GDPR, regulatory audits."
         },
         "ma": {
-          "title": "Mergers & acquisitions",
-          "description": "Due diligence, structuring, deal negotiation."
+          "title": "M&A",
+          "description": "Due diligence, structuring, transaction negotiation."
         },
         "wealth": {
           "title": "Wealth management",
@@ -137,31 +137,7 @@
       "eyebrow": "The team",
       "title": "Recognised expertise, at your service",
       "intro": "A team of French-, Italian- and English-speaking attorneys, jurists and tax advisors.",
-      "leadBio": "Founding partner, doctor of law and author of leading works on Thai law published with Springer, Brill and Cengage. Over twenty years of experience in Southeast Asia.",
-      "leadCredentials": "Author with Springer / Brill / Cengage",
-      "ctaAll": "Meet the full team",
-      "members": {
-        "stasi": {
-          "name": "Pr. Alessandro Stasi",
-          "role": "Founding partner",
-          "shortBio": "Doctor of law, leading author on Thai law."
-        },
-        "memberTwo": {
-          "name": "Sophie Lefèvre",
-          "role": "Senior counsel — Business & Real estate",
-          "shortBio": "Expert in corporate structuring and real estate investments."
-        },
-        "memberThree": {
-          "name": "Marco Bianchi",
-          "role": "Counsel — International taxation",
-          "shortBio": "Specialist in tax treaties and cross-border residency."
-        },
-        "memberFour": {
-          "name": "Pim Watcharapan",
-          "role": "Jurist — Immigration & Employment",
-          "shortBio": "Admitted to the Thai bar, expert in local procedures."
-        }
-      }
+      "ctaAll": "Meet the full team"
     },
     "books": {
       "eyebrow": "Publications",
@@ -286,7 +262,88 @@
     }
   },
   "team": {
-    "title": "Our team"
+    "title": "Our team",
+    "metaDescription": "The team behind MILA International Legal Advice — French-, English- and Italian-speaking lawyers, counsel and tax advisors in Bangkok and Hua Hin.",
+    "hero": {
+      "eyebrow": "Our team",
+      "h1": "Recognised expertise, at your service",
+      "subtitle": "Founding partners, counsel and project officers in French, English and Italian — trained in European civil law and Thai law alike."
+    },
+    "leadBio": "Founding partner, doctor of law and author of leading works on Thai law published with Springer, Brill and Cengage. Over twenty years of experience in Southeast Asia.",
+    "leadCredentials": "Author with Springer / Brill / Cengage",
+    "languagesLabel": "Languages",
+    "emailLabel": "Send an email",
+    "linkedinLabel": "LinkedIn profile",
+    "languages": {
+      "fr": "French",
+      "en": "English",
+      "it": "Italian",
+      "th": "Thai"
+    },
+    "members": {
+      "stasi": {
+        "name": "Pr. Alessandro Stasi",
+        "role": "Founding partner",
+        "shortBio": "Doctor of law, leading author on Thai law.",
+        "bio": "Founding partner of MILA, Pr. Alessandro Stasi teaches private law and business law at Mahidol University. The author of several reference works on Thai law published with Springer, Brill and Cengage, he has advised private and institutional clients on their most sensitive transactions in Southeast Asia for more than twenty years."
+      },
+      "wichai": {
+        "name": "Wichai Jakkrod",
+        "role": "Project Manager",
+        "shortBio": "Steers cross-cutting matters and client coordination.",
+        "bio": "As Project Manager, Wichai Jakkrod oversees the operational delivery of complex matters and coordinates with local authorities. His combined background in law and management lets him orchestrate cross-border work efficiently between the Bangkok and Hua Hin offices."
+      },
+      "atitaya": {
+        "name": "Atitaya Srisawet",
+        "role": "Project Manager",
+        "shortBio": "Drives real-estate and corporate matters.",
+        "bio": "Project Manager focused on real-estate and corporate matters, Atitaya Srisawet coordinates due diligence, contract drafting and exchanges with notaries and Thai administrative bodies. Recognised for her rigour and responsiveness."
+      },
+      "amrita": {
+        "name": "Amrita Luthra",
+        "role": "Legal Assistant",
+        "shortBio": "Legal research and memorandum drafting.",
+        "bio": "Legal Assistant at MILA, Amrita Luthra supports the team on legal research, English-language memoranda and regulatory monitoring. With a degree in international law, she brings particular expertise in comparative law issues."
+      },
+      "pasakorn": {
+        "name": "Pasakorn Nuntutchote",
+        "role": "Project Officer",
+        "shortBio": "Coordinates immigration and corporate filings.",
+        "bio": "As Project Officer, Pasakorn Nuntutchote handles the administrative coordination of immigration files, company incorporations and licensing. His experience with Thai authorities is a key asset for keeping procedures on track."
+      },
+      "nai": {
+        "name": "Nai Khunsriuchen",
+        "role": "Legal Assistant",
+        "shortBio": "Litigation support and Thai-language drafting.",
+        "bio": "Legal Assistant attached to the litigation team, Nai Khunsriuchen handles the follow-up of court proceedings before Thai jurisdictions, the preparation of case files and the drafting of pleadings in Thai and English."
+      }
+    },
+    "publications": {
+      "eyebrow": "Academic publications",
+      "title": "Our reference publications",
+      "intro": "Three works published with the leading international legal publishers, today widely regarded as references on Thai law.",
+      "isbnLabel": "ISBN",
+      "items": {
+        "thaiPrivateLaw": {
+          "title": "Thai Private Law",
+          "publisher": "Springer",
+          "year": "2020",
+          "description": "A comprehensive, systematic analysis of Thai private law for international practitioners. The book covers contracts, torts, property and family law, putting Thai solutions side by side with European civil-law approaches."
+        },
+        "thaiCivilLaw": {
+          "title": "Elements of Thai Civil Law",
+          "publisher": "Brill",
+          "year": "2016",
+          "description": "A reference textbook on the foundations of Thai civil law. Designed as a teaching tool for foreign-trained lawyers, it sets out the architecture of the Thai Civil and Commercial Code and the structuring principles of local private law."
+        },
+        "thaiBusinessLaw": {
+          "title": "A Primer of Thai Business Law",
+          "publisher": "Cengage",
+          "year": "2014",
+          "description": "A practical guide to Thai business law for international companies and investors. Company formation, governance, contracts, taxation, employment law: an operational overview to secure transactions in Thailand."
+        }
+      }
+    }
   },
   "expertises": {
     "title": "Our practice areas"

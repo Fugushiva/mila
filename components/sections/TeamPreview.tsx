@@ -27,10 +27,10 @@ export function TeamPreview({ locale }: Props) {
             variant="lead"
             initials={LEAD_MEMBER.initials}
             tone={LEAD_MEMBER.tone}
-            name={dict.home.teamPreview.members.stasi.name}
-            role={dict.home.teamPreview.members.stasi.role}
-            shortBio={dict.home.teamPreview.leadBio}
-            credentials={dict.home.teamPreview.leadCredentials}
+            name={dict.team.members.stasi.name}
+            role={dict.team.members.stasi.role}
+            shortBio={dict.team.leadBio}
+            credentials={dict.team.leadCredentials}
           />
         </div>
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -40,9 +40,9 @@ export function TeamPreview({ locale }: Props) {
               variant="compact"
               initials={member.initials}
               tone={member.tone}
-              name={dict.home.teamPreview.members[member.key].name}
-              role={dict.home.teamPreview.members[member.key].role}
-              shortBio={dict.home.teamPreview.members[member.key].shortBio}
+              name={dict.team.members[member.key].name}
+              role={dict.team.members[member.key].role}
+              shortBio={dict.team.members[member.key].shortBio}
             />
           ))}
         </div>
