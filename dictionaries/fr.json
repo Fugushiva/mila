@@ -137,31 +137,7 @@
       "eyebrow": "L'équipe",
       "title": "Une expertise reconnue, à votre service",
       "intro": "Une équipe d'avocats, juristes et fiscalistes francophones, italophones et anglophones.",
-      "leadBio": "Avocat associé, docteur en droit et auteur d'ouvrages de référence sur le droit thaïlandais publiés chez Springer, Brill et Cengage. Plus de vingt ans d'expérience en Asie du Sud-Est.",
-      "leadCredentials": "Auteur Springer / Brill / Cengage",
-      "ctaAll": "Découvrir toute l'équipe",
-      "members": {
-        "stasi": {
-          "name": "Pr. Alessandro Stasi",
-          "role": "Avocat associé fondateur",
-          "shortBio": "Docteur en droit, auteur de référence sur le droit thaïlandais."
-        },
-        "memberTwo": {
-          "name": "Sophie Lefèvre",
-          "role": "Avocate senior — Affaires & Immobilier",
-          "shortBio": "Experte en structuration de sociétés et investissements immobiliers."
-        },
-        "memberThree": {
-          "name": "Marco Bianchi",
-          "role": "Avocat — Fiscalité internationale",
-          "shortBio": "Spécialiste des conventions fiscales et de la résidence transfrontalière."
-        },
-        "memberFour": {
-          "name": "Pim Watcharapan",
-          "role": "Juriste — Immigration & Droit du travail",
-          "shortBio": "Inscrite au barreau de Thaïlande, experte des procédures locales."
-        }
-      }
+      "ctaAll": "Découvrir toute l'équipe"
     },
     "books": {
       "eyebrow": "Publications",
@@ -286,7 +262,88 @@
     }
   },
   "team": {
-    "title": "Notre équipe"
+    "title": "Notre équipe",
+    "metaDescription": "L'équipe de MILA International Legal Advice — avocats, juristes et fiscalistes francophones, anglophones et italophones à Bangkok et Hua Hin.",
+    "hero": {
+      "eyebrow": "Notre équipe",
+      "h1": "Une expertise reconnue, à votre service",
+      "subtitle": "Avocats associés, juristes et chargés de projet francophones, anglophones et italophones, formés au droit civil européen et au droit thaïlandais."
+    },
+    "leadBio": "Avocat associé, docteur en droit et auteur d'ouvrages de référence sur le droit thaïlandais publiés chez Springer, Brill et Cengage. Plus de vingt ans d'expérience en Asie du Sud-Est.",
+    "leadCredentials": "Auteur Springer / Brill / Cengage",
+    "languagesLabel": "Langues",
+    "emailLabel": "Envoyer un courriel",
+    "linkedinLabel": "Profil LinkedIn",
+    "languages": {
+      "fr": "Français",
+      "en": "Anglais",
+      "it": "Italien",
+      "th": "Thaï"
+    },
+    "members": {
+      "stasi": {
+        "name": "Pr. Alessandro Stasi",
+        "role": "Avocat associé fondateur",
+        "shortBio": "Docteur en droit, auteur de référence sur le droit thaïlandais.",
+        "bio": "Avocat associé fondateur de MILA, le Pr. Alessandro Stasi enseigne le droit privé et le droit des affaires à Mahidol University. Auteur de plusieurs ouvrages de référence sur le droit thaïlandais publiés chez Springer, Brill et Cengage, il accompagne depuis plus de vingt ans des clients privés et institutionnels sur leurs opérations les plus sensibles en Asie du Sud-Est."
+      },
+      "wichai": {
+        "name": "Wichai Jakkrod",
+        "role": "Project Manager",
+        "shortBio": "Pilotage des dossiers transverses et coordination clients.",
+        "bio": "Project Manager au sein du cabinet, Wichai Jakkrod assure le pilotage opérationnel des dossiers complexes et la coordination avec les autorités locales. Sa double formation juridique et de gestion lui permet d'orchestrer efficacement les opérations transverses entre les bureaux de Bangkok et Hua Hin."
+      },
+      "atitaya": {
+        "name": "Atitaya Srisawet",
+        "role": "Project Manager",
+        "shortBio": "Suivi des dossiers immobiliers et corporate.",
+        "bio": "Project Manager spécialisée dans le suivi des dossiers immobiliers et corporate, Atitaya Srisawet coordonne les due diligences, la rédaction des actes et les échanges avec les notaires et services administratifs thaïlandais. Reconnue pour sa rigueur et sa réactivité."
+      },
+      "amrita": {
+        "name": "Amrita Luthra",
+        "role": "Legal Assistant",
+        "shortBio": "Recherche juridique et rédaction de mémoires.",
+        "bio": "Legal Assistant chez MILA, Amrita Luthra appuie l'équipe sur la recherche juridique, la rédaction de notes et de mémoires en anglais et la veille réglementaire. Diplômée en droit international, elle apporte une expertise particulière sur les questions de droit comparé."
+      },
+      "pasakorn": {
+        "name": "Pasakorn Nuntutchote",
+        "role": "Project Officer",
+        "shortBio": "Coordination des dossiers d'immigration et corporate.",
+        "bio": "Project Officer du cabinet, Pasakorn Nuntutchote prend en charge la coordination administrative des dossiers d'immigration, de constitution de société et de licences. Son expérience auprès des autorités thaïlandaises est un atout précieux pour la fluidité des procédures."
+      },
+      "nai": {
+        "name": "Nai Khunsriuchen",
+        "role": "Legal Assistant",
+        "shortBio": "Assistance contentieuse et rédactionnelle.",
+        "bio": "Legal Assistant rattachée à l'équipe contentieuse, Nai Khunsriuchen assure le suivi des procédures judiciaires devant les juridictions thaïlandaises, la préparation des dossiers et la rédaction des actes en thaï et en anglais."
+      }
+    },
+    "publications": {
+      "eyebrow": "Publications académiques",
+      "title": "Nos publications de référence",
+      "intro": "Trois ouvrages publiés chez les plus grands éditeurs juridiques internationaux, qui font aujourd'hui référence sur le droit thaïlandais.",
+      "isbnLabel": "ISBN",
+      "items": {
+        "thaiPrivateLaw": {
+          "title": "Thai Private Law",
+          "publisher": "Springer",
+          "year": "2020",
+          "description": "Analyse complète et systématique du droit privé thaïlandais à destination des praticiens internationaux. L'ouvrage couvre les contrats, la responsabilité, le droit des biens et le droit de la famille, en mettant en regard les solutions thaïlandaises et celles du droit civil européen."
+        },
+        "thaiCivilLaw": {
+          "title": "Elements of Thai Civil Law",
+          "publisher": "Brill",
+          "year": "2016",
+          "description": "Manuel de référence sur les fondements du droit civil en Thaïlande. Pensé comme un outil pédagogique pour les juristes étrangers, il restitue avec clarté l'architecture du Code civil et commercial thaïlandais et les principes structurants du droit privé local."
+        },
+        "thaiBusinessLaw": {
+          "title": "A Primer of Thai Business Law",
+          "publisher": "Cengage",
+          "year": "2014",
+          "description": "Guide pratique du droit commercial thaïlandais à l'usage des entreprises et investisseurs internationaux. Création de société, gouvernance, contrats, fiscalité, droit du travail : un panorama opérationnel pour sécuriser les opérations en Thaïlande."
+        }
+      }
+    }
   },
   "expertises": {
     "title": "Nos expertises"
