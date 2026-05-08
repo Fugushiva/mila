@@ -44,10 +44,17 @@
     "title": "Accueil",
     "hero": {
       "h1": "Conseil juridique francophone en Thaïlande",
-      "subtitle": "Cabinet d'avocats trilingue à Bangkok et Hua Hin. Droit des affaires, immobilier, immigration et fiscalité internationale."
+      "subtitle": "Cabinet d'avocats trilingue à Bangkok et Hua Hin. Droit des affaires, immobilier, immigration et fiscalité internationale.",
+      "imageAlt": "Vue panoramique des gratte-ciel de Bangkok au crépuscule"
     },
     "trustBar": {
-      "label": "Référencé dans"
+      "label": "Référencé dans",
+      "logos": {
+        "springer": "Springer",
+        "brill": "Brill",
+        "cengage": "Cengage",
+        "mahidol": "Mahidol University"
+      }
     },
     "valueProp": {
       "title": "Une expertise unique en Thaïlande",
@@ -69,6 +76,123 @@
           "description": "Présence locale, interventions à Phuket, Pattaya, Chiang Mai."
         }
       }
+    },
+    "expertiseGrid": {
+      "eyebrow": "Domaines d'intervention",
+      "title": "Nos domaines d'expertise",
+      "intro": "Une expertise transversale du droit thaïlandais et international au service des particuliers et des entreprises francophones.",
+      "ctaAll": "Voir toutes nos expertises",
+      "items": {
+        "business": {
+          "title": "Droit des affaires",
+          "description": "Création de société, gouvernance, contrats commerciaux."
+        },
+        "realEstate": {
+          "title": "Immobilier",
+          "description": "Achat, baux long terme, copropriétés et investissements."
+        },
+        "immigration": {
+          "title": "Immigration",
+          "description": "Visas, permis de travail, résidence permanente et LTR."
+        },
+        "tax": {
+          "title": "Fiscalité internationale",
+          "description": "Résidence fiscale, conventions, optimisation transfrontalière."
+        },
+        "family": {
+          "title": "Droit de la famille",
+          "description": "Mariage, divorce, succession et planification patrimoniale."
+        },
+        "labor": {
+          "title": "Droit du travail",
+          "description": "Contrats, conformité sociale, gestion des litiges RH."
+        },
+        "ip": {
+          "title": "Propriété intellectuelle",
+          "description": "Marques, brevets, droit d'auteur et licences."
+        },
+        "litigation": {
+          "title": "Contentieux & arbitrage",
+          "description": "Représentation devant les juridictions et tribunaux arbitraux."
+        },
+        "criminal": {
+          "title": "Droit pénal des affaires",
+          "description": "Défense, conformité, prévention de la fraude."
+        },
+        "compliance": {
+          "title": "Conformité & RGPD",
+          "description": "PDPA thaïlandais, RGPD européen, audits réglementaires."
+        },
+        "ma": {
+          "title": "Fusions & acquisitions",
+          "description": "Due diligence, structuration, négociation des opérations."
+        },
+        "wealth": {
+          "title": "Gestion de patrimoine",
+          "description": "Trusts, holdings, transmission et structures internationales."
+        }
+      }
+    },
+    "teamPreview": {
+      "eyebrow": "L'équipe",
+      "title": "Une expertise reconnue, à votre service",
+      "intro": "Une équipe d'avocats, juristes et fiscalistes francophones, italophones et anglophones.",
+      "leadBio": "Avocat associé, docteur en droit et auteur d'ouvrages de référence sur le droit thaïlandais publiés chez Springer, Brill et Cengage. Plus de vingt ans d'expérience en Asie du Sud-Est.",
+      "leadCredentials": "Auteur Springer / Brill / Cengage",
+      "ctaAll": "Découvrir toute l'équipe",
+      "members": {
+        "stasi": {
+          "name": "Pr. Alessandro Stasi",
+          "role": "Avocat associé fondateur",
+          "shortBio": "Docteur en droit, auteur de référence sur le droit thaïlandais."
+        },
+        "memberTwo": {
+          "name": "Sophie Lefèvre",
+          "role": "Avocate senior — Affaires & Immobilier",
+          "shortBio": "Experte en structuration de sociétés et investissements immobiliers."
+        },
+        "memberThree": {
+          "name": "Marco Bianchi",
+          "role": "Avocat — Fiscalité internationale",
+          "shortBio": "Spécialiste des conventions fiscales et de la résidence transfrontalière."
+        },
+        "memberFour": {
+          "name": "Pim Watcharapan",
+          "role": "Juriste — Immigration & Droit du travail",
+          "shortBio": "Inscrite au barreau de Thaïlande, experte des procédures locales."
+        }
+      }
+    },
+    "books": {
+      "eyebrow": "Publications",
+      "title": "Une référence académique sur le droit thaïlandais",
+      "intro": "Trois ouvrages de référence publiés chez les plus grands éditeurs juridiques internationaux.",
+      "items": {
+        "thaiPrivateLaw": {
+          "title": "Thai Private Law",
+          "publisher": "Springer",
+          "year": "2020",
+          "description": "Analyse complète du droit privé thaïlandais à destination des praticiens internationaux."
+        },
+        "thaiCivilLaw": {
+          "title": "Elements of Thai Civil Law",
+          "publisher": "Brill",
+          "year": "2016",
+          "description": "Manuel de référence sur les fondements du droit civil en Thaïlande."
+        },
+        "thaiBusinessLaw": {
+          "title": "A Primer of Thai Business Law",
+          "publisher": "Cengage",
+          "year": "2014",
+          "description": "Guide pratique du droit commercial thaïlandais à l'usage des entreprises."
+        }
+      }
+    },
+    "ctaBand": {
+      "eyebrow": "Premier rendez-vous",
+      "title": "Discutons de votre situation",
+      "intro": "Un premier échange confidentiel pour comprendre vos besoins et envisager les meilleures options.",
+      "callLabel": "Appeler le cabinet"
     }
   },
   "cabinet": {

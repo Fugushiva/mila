@@ -44,10 +44,17 @@
     "title": "Home",
     "hero": {
       "h1": "French-speaking legal counsel in Thailand",
-      "subtitle": "Trilingual law firm in Bangkok and Hua Hin. Business law, real estate, immigration and international taxation."
+      "subtitle": "Trilingual law firm in Bangkok and Hua Hin. Business law, real estate, immigration and international taxation.",
+      "imageAlt": "Panoramic view of the Bangkok skyline at dusk"
     },
     "trustBar": {
-      "label": "Featured in"
+      "label": "Featured in",
+      "logos": {
+        "springer": "Springer",
+        "brill": "Brill",
+        "cengage": "Cengage",
+        "mahidol": "Mahidol University"
+      }
     },
     "valueProp": {
       "title": "Unique expertise in Thailand",
@@ -69,6 +76,123 @@
           "description": "Local presence, with interventions in Phuket, Pattaya, Chiang Mai."
         }
       }
+    },
+    "expertiseGrid": {
+      "eyebrow": "Practice areas",
+      "title": "Our areas of expertise",
+      "intro": "Cross-cutting expertise in Thai and international law for individuals and French-speaking businesses.",
+      "ctaAll": "See all practice areas",
+      "items": {
+        "business": {
+          "title": "Business law",
+          "description": "Company formation, governance, commercial contracts."
+        },
+        "realEstate": {
+          "title": "Real estate",
+          "description": "Acquisitions, long-term leases, condominiums and investments."
+        },
+        "immigration": {
+          "title": "Immigration",
+          "description": "Visas, work permits, permanent residency and LTR."
+        },
+        "tax": {
+          "title": "International taxation",
+          "description": "Tax residency, treaties, cross-border optimisation."
+        },
+        "family": {
+          "title": "Family law",
+          "description": "Marriage, divorce, succession and estate planning."
+        },
+        "labor": {
+          "title": "Employment law",
+          "description": "Contracts, social compliance, HR dispute management."
+        },
+        "ip": {
+          "title": "Intellectual property",
+          "description": "Trademarks, patents, copyright and licensing."
+        },
+        "litigation": {
+          "title": "Litigation & arbitration",
+          "description": "Representation before Thai courts and arbitral tribunals."
+        },
+        "criminal": {
+          "title": "White-collar criminal law",
+          "description": "Defence, compliance, fraud prevention."
+        },
+        "compliance": {
+          "title": "Compliance & GDPR",
+          "description": "Thai PDPA, EU GDPR, regulatory audits."
+        },
+        "ma": {
+          "title": "Mergers & acquisitions",
+          "description": "Due diligence, structuring, deal negotiation."
+        },
+        "wealth": {
+          "title": "Wealth management",
+          "description": "Trusts, holdings, succession and international structures."
+        }
+      }
+    },
+    "teamPreview": {
+      "eyebrow": "The team",
+      "title": "Recognised expertise, at your service",
+      "intro": "A team of French-, Italian- and English-speaking attorneys, jurists and tax advisors.",
+      "leadBio": "Founding partner, doctor of law and author of leading works on Thai law published with Springer, Brill and Cengage. Over twenty years of experience in Southeast Asia.",
+      "leadCredentials": "Author with Springer / Brill / Cengage",
+      "ctaAll": "Meet the full team",
+      "members": {
+        "stasi": {
+          "name": "Pr. Alessandro Stasi",
+          "role": "Founding partner",
+          "shortBio": "Doctor of law, leading author on Thai law."
+        },
+        "memberTwo": {
+          "name": "Sophie Lefèvre",
+          "role": "Senior counsel — Business & Real estate",
+          "shortBio": "Expert in corporate structuring and real estate investments."
+        },
+        "memberThree": {
+          "name": "Marco Bianchi",
+          "role": "Counsel — International taxation",
+          "shortBio": "Specialist in tax treaties and cross-border residency."
+        },
+        "memberFour": {
+          "name": "Pim Watcharapan",
+          "role": "Jurist — Immigration & Employment",
+          "shortBio": "Admitted to the Thai bar, expert in local procedures."
+        }
+      }
+    },
+    "books": {
+      "eyebrow": "Publications",
+      "title": "An academic reference on Thai law",
+      "intro": "Three reference works published by leading international legal publishers.",
+      "items": {
+        "thaiPrivateLaw": {
+          "title": "Thai Private Law",
+          "publisher": "Springer",
+          "year": "2020",
+          "description": "A comprehensive analysis of Thai private law for international practitioners."
+        },
+        "thaiCivilLaw": {
+          "title": "Elements of Thai Civil Law",
+          "publisher": "Brill",
+          "year": "2016",
+          "description": "A reference textbook on the foundations of Thai civil law."
+        },
+        "thaiBusinessLaw": {
+          "title": "A Primer of Thai Business Law",
+          "publisher": "Cengage",
+          "year": "2014",
+          "description": "A practical guide to Thai business law for companies."
+        }
+      }
+    },
+    "ctaBand": {
+      "eyebrow": "Initial consultation",
+      "title": "Let's talk about your situation",
+      "intro": "An initial confidential conversation to understand your needs and explore the best options.",
+      "callLabel": "Call the firm"
     }
   },
   "cabinet": {
