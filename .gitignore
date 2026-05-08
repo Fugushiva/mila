@@ -42,6 +42,11 @@ next-env.d.ts
 
 # tooling caches
 .playwright-mcp/
+analysis-mila-law/
+
+# dev server logs
+dev-stdout.log
+dev-stderr.log
 
 # IDE
 .idea/
