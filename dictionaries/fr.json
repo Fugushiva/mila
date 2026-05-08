@@ -413,7 +413,104 @@
     }
   },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "metaDescription": "Contactez MILA International Legal Advice à Bangkok ou Hua Hin. Première consultation sur rendez-vous, réponse sous 24h ouvrées.",
+    "hero": {
+      "eyebrow": "Nous écrire",
+      "h1": "Contactez-nous",
+      "subtitle": "Première consultation sur rendez-vous. Nous vous répondons sous 24h ouvrées."
+    },
+    "form": {
+      "eyebrow": "Formulaire",
+      "title": "Décrivez votre situation",
+      "intro": "Tous les échanges sont strictement confidentiels et couverts par le secret professionnel.",
+      "fields": {
+        "name": {
+          "label": "Nom complet",
+          "placeholder": "Votre nom et prénom",
+          "required": "Le nom est requis."
+        },
+        "email": {
+          "label": "Adresse email",
+          "placeholder": "vous@exemple.com",
+          "required": "L'adresse email est requise.",
+          "invalid": "Adresse email invalide."
+        },
+        "phone": {
+          "label": "Téléphone (optionnel)",
+          "placeholder": "+33 6 12 34 56 78"
+        },
+        "subject": {
+          "label": "Sujet",
+          "placeholder": "Choisissez un sujet",
+          "required": "Le sujet est requis.",
+          "options": {
+            "business": "Droit des affaires",
+            "realEstate": "Immobilier",
+            "immigration": "Immigration",
+            "tax": "Fiscalité internationale",
+            "family": "Droit de la famille",
+            "labor": "Droit du travail",
+            "ip": "Propriété intellectuelle",
+            "litigation": "Contentieux & arbitrage",
+            "criminal": "Droit pénal des affaires",
+            "compliance": "Conformité & RGPD",
+            "ma": "Fusions & acquisitions",
+            "wealth": "Gestion de patrimoine",
+            "other": "Autre"
+          }
+        },
+        "message": {
+          "label": "Votre message",
+          "placeholder": "Décrivez brièvement votre situation et vos questions.",
+          "required": "Le message est requis."
+        },
+        "consent": {
+          "label": "J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité.",
+          "required": "Votre consentement est requis pour nous écrire."
+        }
+      },
+      "submit": "Envoyer ma demande",
+      "submitting": "Envoi en cours…",
+      "successTitle": "Demande reçue",
+      "successDescription": "Merci, nous revenons vers vous sous 24h ouvrées.",
+      "errorTitle": "Erreur",
+      "errorDescription": "Une erreur est survenue. Merci de réessayer ou de nous écrire directement à info@mila-law.com."
+    },
+    "info": {
+      "eyebrow": "Coordonnées",
+      "title": "Joindre le cabinet",
+      "addressLabel": "Adresse",
+      "phoneLabel": "Téléphone",
+      "phoneValue": "+66 (0)97 180 5845",
+      "emailLabel": "Email",
+      "emailValue": "info@mila-law.com",
+      "whatsappLabel": "WhatsApp",
+      "whatsappValue": "+66 97 180 5845",
+      "lineLabel": "LINE",
+      "lineValue": "@mila-law",
+      "hoursLabel": "Horaires",
+      "hoursValue": "Lundi – Vendredi : 9h – 18h (heure de Bangkok)",
+      "bookOnline": "Prendre rendez-vous en ligne"
+    },
+    "map": {
+      "title": "Bureau principal — Bangkok",
+      "intro": "3rd Floor, Modern Town Building, Soi Sukhumvit 63 (Ekkamai), Klongton Nua, Watthana, Bangkok 10110.",
+      "iframeTitle": "Carte du bureau MILA à Bangkok"
+    },
+    "emergency": {
+      "eyebrow": "Urgence",
+      "title": "Citoyen français en situation d'urgence ?",
+      "description": "Pour les urgences consulaires (perte de papiers, hospitalisation, arrestation), contactez l'Ambassade de France à Bangkok.",
+      "ctaLabel": "Ambassade de France à Bangkok"
+    },
+    "ctaBand": {
+      "eyebrow": "Appel direct",
+      "title": "Préférez-vous un échange immédiat ?",
+      "intro": "Notre standard est ouvert du lundi au vendredi, de 9h à 18h (heure de Bangkok). Appelez-nous, nous décrochons.",
+      "callLabel": "Appeler le cabinet",
+      "secondaryLabel": "Nous écrire"
+    }
   },
   "legal": {
     "title": "Mentions légales et confidentialité"

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
+import { Toaster } from "sonner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ebGaramond, lato } from "@/lib/fonts";
@@ -93,6 +94,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[lang]">) {
           {props.children}
         </main>
         <Footer locale={lang} />
+        <Toaster position="top-center" richColors closeButton />
       </body>
     </html>
   );
