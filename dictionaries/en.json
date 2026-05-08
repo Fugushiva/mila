@@ -196,7 +196,94 @@
     }
   },
   "cabinet": {
-    "title": "About the firm"
+    "title": "About the firm",
+    "metaDescription": "History, values and geographic reach of MILA International Legal Advice — the leading French-speaking law firm in Bangkok and Hua Hin since 2012.",
+    "hero": {
+      "eyebrow": "About",
+      "h1": "MILA — the firm",
+      "subtitle": "Since 2012, the leading legal advisory for the French-speaking and international community in Thailand."
+    },
+    "history": {
+      "eyebrow": "Our story",
+      "title": "Expertise built over more than a decade",
+      "paragraphs": {
+        "p1": "Founded in 2012 in Bangkok, MILA International Legal Advice was created on the conviction that a French-speaking, international law firm could deliver unique value to entrepreneurs, investors and families operating in Thailand.",
+        "p2": "Over the years, our team has supported hundreds of clients on their most demanding projects — company incorporations, real-estate acquisitions, cross-border disputes, wealth structuring — combining the rigour of European civil law with deep, local knowledge of Thai law.",
+        "p3": "Today, MILA is recognised as both an academic and practical reference on Thai law, with publications at Springer, Brill and Cengage, and privileged ties with Mahidol University."
+      },
+      "imageAlt": "Interior view of a law firm office in Bangkok"
+    },
+    "values": {
+      "eyebrow": "Our values",
+      "title": "Three pillars that define our practice",
+      "intro": "The daily commitments we make to our clients and to our profession.",
+      "items": {
+        "excellence": {
+          "title": "Academic excellence",
+          "description": "A practice nurtured by research, reference publications and ongoing international training."
+        },
+        "multicultural": {
+          "title": "Multicultural approach",
+          "description": "Three working languages, an international team and a refined understanding of European and Asian legal cultures."
+        },
+        "availability": {
+          "title": "Availability",
+          "description": "A dedicated point of contact, proven responsiveness and personal follow-up on every matter."
+        }
+      }
+    },
+    "mahidol": {
+      "eyebrow": "Academic partnership",
+      "title": "Privileged ties with Mahidol University",
+      "description": "Several members of the MILA team teach private law and business law at Mahidol University, one of Thailand's most prestigious institutions. This academic partnership feeds our practice with a deep understanding of Thai law and its evolutions, and gives us access to a unique network of local and international experts.",
+      "logoLabel": "MAHIDOL UNIVERSITY",
+      "logoSubtitle": "Faculty of Social Sciences and Humanities"
+    },
+    "coverage": {
+      "eyebrow": "Geographic reach",
+      "title": "A presence across Thailand",
+      "intro": "Two permanent offices and on-the-ground interventions throughout the country.",
+      "offices": {
+        "bangkok": {
+          "label": "Bangkok",
+          "kind": "Head office"
+        },
+        "huaHin": {
+          "label": "Hua Hin",
+          "kind": "Secondary office"
+        }
+      },
+      "interventionsLabel": "Ad-hoc interventions",
+      "interventions": {
+        "phuket": "Phuket",
+        "pattaya": "Pattaya",
+        "chiangMai": "Chiang Mai",
+        "kohSamui": "Koh Samui"
+      },
+      "mapAlt": "Stylised map of Thailand showing our offices and intervention areas"
+    },
+    "stats": {
+      "eyebrow": "By the numbers",
+      "title": "MILA at a glance",
+      "items": {
+        "experience": {
+          "value": "12+",
+          "label": "years of experience"
+        },
+        "languages": {
+          "value": "3",
+          "label": "working languages"
+        },
+        "expertises": {
+          "value": "12",
+          "label": "practice areas"
+        },
+        "lawyers": {
+          "value": "6",
+          "label": "lawyers and counsel"
+        }
+      }
+    }
   },
   "team": {
     "title": "Our team"

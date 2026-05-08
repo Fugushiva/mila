@@ -196,7 +196,94 @@
     }
   },
   "cabinet": {
-    "title": "Le cabinet"
+    "title": "Le cabinet",
+    "metaDescription": "Histoire, valeurs et couverture géographique de MILA International Legal Advice — cabinet francophone de référence à Bangkok et Hua Hin depuis 2012.",
+    "hero": {
+      "eyebrow": "À propos",
+      "h1": "Le cabinet MILA",
+      "subtitle": "Depuis 2012, conseil juridique de référence pour la communauté francophone et internationale en Thaïlande."
+    },
+    "history": {
+      "eyebrow": "Notre histoire",
+      "title": "Une expertise construite au fil des années",
+      "paragraphs": {
+        "p1": "Fondé en 2012 à Bangkok, MILA International Legal Advice est né de la conviction qu'un cabinet d'avocats francophone et international pouvait apporter une valeur unique aux entrepreneurs, investisseurs et familles présents en Thaïlande.",
+        "p2": "Au fil des années, notre équipe a accompagné des centaines de clients dans leurs projets les plus complexes — implantation de sociétés, acquisitions immobilières, contentieux internationaux, structuration patrimoniale — en alliant la rigueur du droit civil européen et la connaissance pointue du droit thaïlandais.",
+        "p3": "Aujourd'hui, MILA est reconnu comme une référence académique et pratique sur le droit thaïlandais, avec des publications chez Springer, Brill et Cengage, et des liens privilégiés avec Mahidol University."
+      },
+      "imageAlt": "Vue intérieure d'un bureau d'avocats à Bangkok"
+    },
+    "values": {
+      "eyebrow": "Nos valeurs",
+      "title": "Trois piliers qui définissent notre pratique",
+      "intro": "Nos engagements quotidiens envers nos clients et notre métier.",
+      "items": {
+        "excellence": {
+          "title": "Excellence académique",
+          "description": "Une pratique nourrie par la recherche, des publications de référence et une formation continue à l'international."
+        },
+        "multicultural": {
+          "title": "Approche pluriculturelle",
+          "description": "Trois langues de travail, une équipe internationale et une compréhension fine des cultures juridiques européenne et asiatique."
+        },
+        "availability": {
+          "title": "Disponibilité",
+          "description": "Un interlocuteur dédié, une réactivité éprouvée et un suivi personnalisé pour chaque dossier."
+        }
+      }
+    },
+    "mahidol": {
+      "eyebrow": "Partenariat académique",
+      "title": "Liens privilégiés avec Mahidol University",
+      "description": "Plusieurs membres de l'équipe MILA enseignent le droit privé et le droit des affaires à Mahidol University, l'une des plus prestigieuses universités de Thaïlande. Ce partenariat académique nourrit notre pratique d'une compréhension approfondie du droit thaïlandais et de ses évolutions, et nous donne accès à un réseau d'experts locaux et internationaux unique.",
+      "logoLabel": "MAHIDOL UNIVERSITY",
+      "logoSubtitle": "Faculty of Social Sciences and Humanities"
+    },
+    "coverage": {
+      "eyebrow": "Couverture géographique",
+      "title": "Présence en Thaïlande",
+      "intro": "Deux bureaux permanents et des interventions sur l'ensemble du territoire.",
+      "offices": {
+        "bangkok": {
+          "label": "Bangkok",
+          "kind": "Bureau principal"
+        },
+        "huaHin": {
+          "label": "Hua Hin",
+          "kind": "Bureau secondaire"
+        }
+      },
+      "interventionsLabel": "Interventions ponctuelles",
+      "interventions": {
+        "phuket": "Phuket",
+        "pattaya": "Pattaya",
+        "chiangMai": "Chiang Mai",
+        "kohSamui": "Koh Samui"
+      },
+      "mapAlt": "Carte stylisée de la Thaïlande indiquant nos bureaux et zones d'intervention"
+    },
+    "stats": {
+      "eyebrow": "En chiffres",
+      "title": "MILA en quelques repères",
+      "items": {
+        "experience": {
+          "value": "12+",
+          "label": "années d'expérience"
+        },
+        "languages": {
+          "value": "3",
+          "label": "langues de travail"
+        },
+        "expertises": {
+          "value": "12",
+          "label": "domaines d'expertise"
+        },
+        "lawyers": {
+          "value": "6",
+          "label": "avocats et juristes"
+        }
+      }
+    }
   },
   "team": {
     "title": "Notre équipe"
