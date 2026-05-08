@@ -513,6 +513,93 @@
     }
   },
   "legal": {
-    "title": "Mentions légales et confidentialité"
+    "title": "Mentions légales et confidentialité",
+    "metaDescription": "Mentions légales, politique de confidentialité, RGPD et politique cookies de MILA International Legal Advice.",
+    "hero": {
+      "eyebrow": "Informations légales",
+      "h1": "Mentions légales et confidentialité",
+      "subtitle": "Conformément à la loi, voici les informations légales relatives à ce site, ainsi que notre politique de confidentialité et de cookies."
+    },
+    "lastUpdated": "Dernière mise à jour : 8 mai 2026",
+    "toc": {
+      "title": "Sommaire",
+      "items": {
+        "editor": "Éditeur du site",
+        "hosting": "Hébergement",
+        "intellectualProperty": "Propriété intellectuelle",
+        "privacy": "Données personnelles (RGPD)",
+        "cookies": "Cookies",
+        "law": "Loi applicable"
+      }
+    },
+    "sections": {
+      "editor": {
+        "title": "Éditeur du site",
+        "items": {
+          "name": { "label": "Raison sociale", "value": "MILA International Legal Advice Co., Ltd." },
+          "address": { "label": "Adresse", "value": "3rd Floor, Modern Town Building, Soi Sukhumvit 63 (Ekkamai), Klongton Nua, Watthana, Bangkok 10110, Thaïlande" },
+          "phone": { "label": "Téléphone", "value": "+66 (0)97 180 5845" },
+          "email": { "label": "Email", "value": "info@mila-law.com" },
+          "representative": { "label": "Représentant légal", "value": "Maître Pisut Rakwong, fondateur et Managing Partner" },
+          "registration": { "label": "Numéro d'enregistrement", "value": "Thai Company Registration n° à compléter" }
+        }
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "intro": "Le site est hébergé par :",
+        "host": {
+          "name": "Vercel Inc.",
+          "address": "340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis",
+          "url": "https://vercel.com"
+        }
+      },
+      "intellectualProperty": {
+        "title": "Propriété intellectuelle",
+        "paragraphs": {
+          "p1": "L'ensemble des contenus de ce site (textes, images, illustrations, vidéos, marques, logos, logiciels) est protégé par le droit de la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation totale ou partielle des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de MILA International Legal Advice.",
+          "p2": "Toute exploitation non autorisée du site ou de ses contenus est susceptible d'engager la responsabilité civile et pénale de son auteur."
+        }
+      },
+      "privacy": {
+        "title": "Données personnelles (RGPD)",
+        "paragraphs": {
+          "controller": {
+            "title": "Responsable de traitement",
+            "text": "Le responsable de traitement des données personnelles collectées via ce site est MILA International Legal Advice, dont les coordonnées figurent ci-dessus."
+          },
+          "purposes": {
+            "title": "Finalités",
+            "text": "Les données collectées via le formulaire de contact sont utilisées exclusivement pour répondre à votre demande, organiser un rendez-vous et assurer le suivi de la relation client."
+          },
+          "legalBasis": {
+            "title": "Base légale",
+            "text": "Le traitement repose sur votre consentement (article 6.1.a du RGPD) ainsi que sur l'exécution de mesures précontractuelles prises à votre demande (article 6.1.b)."
+          },
+          "retention": {
+            "title": "Durée de conservation",
+            "text": "Les données sont conservées le temps nécessaire au traitement de votre demande, puis archivées pendant la durée de la prescription légale (cinq ans en matière contractuelle)."
+          },
+          "rights": {
+            "title": "Vos droits",
+            "text": "Vous disposez d'un droit d'accès, de rectification, d'effacement, de portabilité, de limitation et d'opposition concernant vos données personnelles. Vous pouvez exercer ces droits en écrivant à info@mila-law.com. Vous avez également le droit d'introduire une réclamation auprès de la CNIL (www.cnil.fr)."
+          }
+        }
+      },
+      "cookies": {
+        "title": "Cookies",
+        "paragraphs": {
+          "p1": "Ce site n'utilise aucun cookie publicitaire ni traceur tiers.",
+          "p2": "Les statistiques d'audience sont mesurées via Plausible Analytics, une solution respectueuse de la vie privée qui ne dépose aucun cookie et n'opère aucun suivi inter-sites.",
+          "p3": "Seuls des cookies strictement nécessaires au fonctionnement technique du site (gestion de la langue préférée notamment) peuvent être déposés. Ces cookies ne nécessitent pas votre consentement préalable au sens de la directive ePrivacy."
+        }
+      },
+      "law": {
+        "title": "Loi applicable",
+        "paragraphs": {
+          "p1": "Le présent site est régi par le droit thaïlandais. Toutefois, conformément aux engagements professionnels du cabinet, les ressortissants français peuvent invoquer les dispositions du droit français applicables à la relation client (notamment en matière de protection des données et de droit de la consommation).",
+          "p2": "En cas de litige et à défaut de résolution amiable, les tribunaux compétents seront, selon la nature de la relation, ceux du siège du cabinet à Bangkok ou ceux du domicile du client au sein de l'Union européenne."
+        }
+      }
+    }
   }
 }
