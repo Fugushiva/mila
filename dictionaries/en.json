@@ -513,6 +513,93 @@
     }
   },
   "legal": {
-    "title": "Legal notice and privacy"
+    "title": "Legal notice and privacy",
+    "metaDescription": "Legal notice, privacy policy, GDPR and cookie policy of MILA International Legal Advice.",
+    "hero": {
+      "eyebrow": "Legal information",
+      "h1": "Legal notice and privacy",
+      "subtitle": "In accordance with the law, here is the legal information regarding this site, together with our privacy and cookie policy."
+    },
+    "lastUpdated": "Last updated: 8 May 2026",
+    "toc": {
+      "title": "Table of contents",
+      "items": {
+        "editor": "Site publisher",
+        "hosting": "Hosting",
+        "intellectualProperty": "Intellectual property",
+        "privacy": "Personal data (GDPR)",
+        "cookies": "Cookies",
+        "law": "Applicable law"
+      }
+    },
+    "sections": {
+      "editor": {
+        "title": "Site publisher",
+        "items": {
+          "name": { "label": "Company name", "value": "MILA International Legal Advice Co., Ltd." },
+          "address": { "label": "Address", "value": "3rd Floor, Modern Town Building, Soi Sukhumvit 63 (Ekkamai), Klongton Nua, Watthana, Bangkok 10110, Thailand" },
+          "phone": { "label": "Phone", "value": "+66 (0)97 180 5845" },
+          "email": { "label": "Email", "value": "info@mila-law.com" },
+          "representative": { "label": "Legal representative", "value": "Pisut Rakwong, founder and Managing Partner" },
+          "registration": { "label": "Registration number", "value": "Thai Company Registration No. to be completed" }
+        }
+      },
+      "hosting": {
+        "title": "Hosting",
+        "intro": "This site is hosted by:",
+        "host": {
+          "name": "Vercel Inc.",
+          "address": "340 S Lemon Ave #4133, Walnut, CA 91789, United States",
+          "url": "https://vercel.com"
+        }
+      },
+      "intellectualProperty": {
+        "title": "Intellectual property",
+        "paragraphs": {
+          "p1": "All content on this site (texts, images, illustrations, videos, trademarks, logos, software) is protected by intellectual property law. Any reproduction, representation, modification, publication, total or partial adaptation of the elements of the site, by whatever means or process, is prohibited without the prior written authorization of MILA International Legal Advice.",
+          "p2": "Any unauthorized exploitation of the site or its content may engage the civil and criminal liability of its author."
+        }
+      },
+      "privacy": {
+        "title": "Personal data (GDPR)",
+        "paragraphs": {
+          "controller": {
+            "title": "Data controller",
+            "text": "The controller of personal data collected via this site is MILA International Legal Advice, whose details appear above."
+          },
+          "purposes": {
+            "title": "Purposes",
+            "text": "Data collected via the contact form is used exclusively to respond to your request, schedule a meeting and manage the client relationship."
+          },
+          "legalBasis": {
+            "title": "Legal basis",
+            "text": "Processing is based on your consent (Article 6.1.a GDPR) as well as on the performance of pre-contractual measures taken at your request (Article 6.1.b)."
+          },
+          "retention": {
+            "title": "Retention period",
+            "text": "Data is retained for as long as necessary to process your request, then archived during the legal limitation period (five years for contractual matters)."
+          },
+          "rights": {
+            "title": "Your rights",
+            "text": "You have the right to access, rectify, erase, port, restrict and object to the processing of your personal data. You can exercise these rights by writing to info@mila-law.com. You also have the right to lodge a complaint with the CNIL (www.cnil.fr) or your national supervisory authority."
+          }
+        }
+      },
+      "cookies": {
+        "title": "Cookies",
+        "paragraphs": {
+          "p1": "This site does not use any advertising cookies or third-party trackers.",
+          "p2": "Audience statistics are measured via Plausible Analytics, a privacy-friendly solution that does not set cookies and does not perform any cross-site tracking.",
+          "p3": "Only cookies strictly necessary for the technical operation of the site (such as managing your preferred language) may be placed. These cookies do not require your prior consent under the ePrivacy directive."
+        }
+      },
+      "law": {
+        "title": "Applicable law",
+        "paragraphs": {
+          "p1": "This site is governed by Thai law. However, in line with the firm's professional commitments, French citizens may invoke the provisions of French law applicable to the client relationship (in particular regarding data protection and consumer law).",
+          "p2": "In the event of a dispute and failing an amicable resolution, the competent courts will be, depending on the nature of the relationship, those of the firm's headquarters in Bangkok or those of the client's domicile within the European Union."
+        }
+      }
+    }
   }
 }
