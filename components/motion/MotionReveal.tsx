@@ -19,7 +19,7 @@ type Props = {
 };
 
 /**
- * Reveal-on-scroll wrapper. Fades + slides up when 30% visible.
+ * Reveal-on-scroll wrapper. Fades + slides up when 10% visible.
  * Respects `prefers-reduced-motion` — falls back to instant fade.
  *
  * Editorial-grade easing curve (Apple HIG-inspired) and 700ms duration
@@ -33,7 +33,7 @@ export function MotionReveal({
   as,
   className,
   once = true,
-  amount = 0.3,
+  amount = 0.1,
 }: Props) {
   const reduced = useReducedMotion();
   const Component = (as ?? "div") as ElementType;
@@ -85,7 +85,7 @@ export function MotionStagger({
   children,
   stagger = 0.08,
   className,
-  amount = 0.2,
+  amount = 0.1,
 }: StaggerProps) {
   const reduced = useReducedMotion();
   const variants: Variants = {
